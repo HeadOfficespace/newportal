@@ -8,13 +8,13 @@ async function run() {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
     
-    const siteUrl = 'https://demo.tailadmin.com/task-list';
+    const siteUrl = 'https://demo.tailadmin.com/task-list'; //Add the URL you want to scrape here.
     await page.goto(siteUrl);
     await page.waitForSelector('body');
     
     const html = await page.content();
     
-    // Cria um diretório com o nome da página
+    // Create a directory with the page name
     const dirName = url.parse(siteUrl).pathname.split('/').pop();
     fs.mkdirSync(dirName, { recursive: true });
     
