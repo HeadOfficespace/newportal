@@ -2123,10 +2123,10 @@ body{
   height: 50px;
 }
 .h-\[calc\(100vh-186px\)\]{
-  height: calc(100vh - 186px);
+  height: calc(100vh - 1px);
 }
 .h-\[calc\(100vh-80px\)\]{
-  height: calc(100vh - 80px);
+  height: calc(100vh - 1px);
 }
 .h-auto{
   height: auto;
@@ -2579,9 +2579,9 @@ body{
   max-width: -moz-max-content;
   max-width: max-content;
 }
-.max-w-screen-2xl{
+/* .max-w-screen-2xl{
   max-width: 1536px;
-}
+} */
 .flex-1{
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
@@ -3634,9 +3634,9 @@ body{
 .p-3{
   padding: 0.75rem;
 }
-.p-4{
+/* .p-4{
   padding: 1rem;
-}
+} */
 .p-4\.5{
   padding: 1.125rem;
 }
@@ -6285,7 +6285,7 @@ input[type="search"]::-webkit-search-cancel-button{
   }
 
   .sm\:h-\[calc\(100vh-174px\)\]{
-    height: calc(100vh - 174px);
+    height: calc(100vh - 1px);
   }
 
   .sm\:w-1\/2{
@@ -6633,9 +6633,9 @@ input[type="search"]::-webkit-search-cancel-button{
     gap: 1.75rem;
   }
 
-  .md\:p-6{
+  /* .md\:p-6{
     padding: 1.5rem;
-  }
+  } */
 
   .md\:p-9{
     padding: 2.25rem;
@@ -7185,9 +7185,9 @@ input[type="search"]::-webkit-search-cancel-button{
     gap: 2.25rem;
   }
 
-  .\32xl\:p-10{
+  /* .\32xl\:p-10{
     padding: 2.5rem;
-  }
+  } */
 
   .\32xl\:p-15{
     padding: 3.75rem;
