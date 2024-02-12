@@ -95,7 +95,7 @@
                   >
                     <div class="relative drop-shadow-2">
                       <img
-                        src="/src/images/user/blank-profile.jpg"
+                        src="src/images/user/blank-profile.jpg"
                         alt="profile"
                         class="rounded-lg"
                       />
@@ -133,6 +133,7 @@
                       </label>
                     </div>
                   </div>
+                  <!-- profile text start -->
                   <div class="mt-4">
                     <h3
                       class="mb-1.5 text-2xl font-medium text-black dark:text-white"
@@ -188,6 +189,8 @@
                       </div>
                     </div>
                   </div>
+                  
+                  <!-- profile text end -->
                 </div>
               </div>
               <!-- Basic Information Section Start -->
@@ -339,13 +342,14 @@
                       x-show="openTab === 2"
                       class="font-medium leading-relaxed"
                       style="display: none"
-                    >
-                      Experience Text --- ipsum dolor sit amet, consectetur
-                      adipiscing elit. Suspendisse luctus ligula nec dolor
-                      placerat, a consequat elit volutpat. Quisque nibh lacus,
-                      posuere et turpis in, pretium facilisis nisl. Proin congue
-                      sem vel sollicitudin sagittis. Class aptent taciti
-                      sociosqu ad litora torquent per conubia nostra, per
+                    ><div class="flex flex-col gap-5.5 ">
+                      <div>
+                        <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                          Describe your AI Mate's experience or background
+                        </label>
+                        <textarea rows="6" placeholder="Experience text" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"></textarea>
+                      </div>
+                    </div>
                     </div>
                     <div
                       x-show="openTab === 3"
