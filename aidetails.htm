@@ -7,6 +7,7 @@
     <title>Tabs | TailAdmin - Tailwind CSS Admin Dashboard Template</title>
     <link rel="icon" href="favicon.ico" />
     <link href="style.css" rel="stylesheet" />
+    <script src="aidetails.js" defer></script>
   </head>
 
   <body
@@ -39,16 +40,49 @@
         <main>
           <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
             <div class="flex flex-col gap-3">
-              <div class="overflow-hidden rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+              <div
+                class="overflow-hidden rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
                 <div class="relative z-20 h-35 md:h-65">
-                  <img src="src/images/cover/cover-01.png" alt="profile cover" class="h-full w-full rounded-lg object-cover object-center">
-                  <div class="absolute bottom-1 right-1 z-10 xsm:bottom-4 xsm:right-4">
-                    <label for="cover" class="flex cursor-pointer items-center justify-center gap-2 rounded bg-primary px-2 py-1 text-sm font-medium text-white hover:bg-opacity-80 xsm:px-4">
-                      <input type="file" name="cover" id="cover" class="sr-only">
+                  <img
+                    src="src/images/cover/cover-01.png"
+                    alt="profile cover"
+                    class="h-full w-full rounded-lg object-cover object-center"
+                  />
+                  <div
+                    class="absolute bottom-1 right-1 z-10 xsm:bottom-4 xsm:right-4"
+                  >
+                    <label
+                      for="cover"
+                      class="flex cursor-pointer items-center justify-center gap-2 rounded bg-primary px-2 py-1 text-sm font-medium text-white hover:bg-opacity-80 xsm:px-4"
+                    >
+                      <input
+                        type="file"
+                        name="cover"
+                        id="cover"
+                        class="sr-only"
+                      />
                       <span>
-                        <svg class="fill-current" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.76464 1.42638C4.87283 1.2641 5.05496 1.16663 5.25 1.16663H8.75C8.94504 1.16663 9.12717 1.2641 9.23536 1.42638L10.2289 2.91663H12.25C12.7141 2.91663 13.1592 3.101 13.4874 3.42919C13.8156 3.75738 14 4.2025 14 4.66663V11.0833C14 11.5474 13.8156 11.9925 13.4874 12.3207C13.1592 12.6489 12.7141 12.8333 12.25 12.8333H1.75C1.28587 12.8333 0.840752 12.6489 0.512563 12.3207C0.184375 11.9925 0 11.5474 0 11.0833V4.66663C0 4.2025 0.184374 3.75738 0.512563 3.42919C0.840752 3.101 1.28587 2.91663 1.75 2.91663H3.77114L4.76464 1.42638ZM5.56219 2.33329L4.5687 3.82353C4.46051 3.98582 4.27837 4.08329 4.08333 4.08329H1.75C1.59529 4.08329 1.44692 4.14475 1.33752 4.25415C1.22812 4.36354 1.16667 4.51192 1.16667 4.66663V11.0833C1.16667 11.238 1.22812 11.3864 1.33752 11.4958C1.44692 11.6052 1.59529 11.6666 1.75 11.6666H12.25C12.4047 11.6666 12.5531 11.6052 12.6625 11.4958C12.7719 11.3864 12.8333 11.238 12.8333 11.0833V4.66663C12.8333 4.51192 12.7719 4.36354 12.6625 4.25415C12.5531 4.14475 12.4047 4.08329 12.25 4.08329H9.91667C9.72163 4.08329 9.53949 3.98582 9.4313 3.82353L8.43781 2.33329H5.56219Z" fill="white"></path>
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99992 5.83329C6.03342 5.83329 5.24992 6.61679 5.24992 7.58329C5.24992 8.54979 6.03342 9.33329 6.99992 9.33329C7.96642 9.33329 8.74992 8.54979 8.74992 7.58329C8.74992 6.61679 7.96642 5.83329 6.99992 5.83329ZM4.08325 7.58329C4.08325 5.97246 5.38909 4.66663 6.99992 4.66663C8.61075 4.66663 9.91659 5.97246 9.91659 7.58329C9.91659 9.19412 8.61075 10.5 6.99992 10.5C5.38909 10.5 4.08325 9.19412 4.08325 7.58329Z" fill="white"></path>
+                        <svg
+                          class="fill-current"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.76464 1.42638C4.87283 1.2641 5.05496 1.16663 5.25 1.16663H8.75C8.94504 1.16663 9.12717 1.2641 9.23536 1.42638L10.2289 2.91663H12.25C12.7141 2.91663 13.1592 3.101 13.4874 3.42919C13.8156 3.75738 14 4.2025 14 4.66663V11.0833C14 11.5474 13.8156 11.9925 13.4874 12.3207C13.1592 12.6489 12.7141 12.8333 12.25 12.8333H1.75C1.28587 12.8333 0.840752 12.6489 0.512563 12.3207C0.184375 11.9925 0 11.5474 0 11.0833V4.66663C0 4.2025 0.184374 3.75738 0.512563 3.42919C0.840752 3.101 1.28587 2.91663 1.75 2.91663H3.77114L4.76464 1.42638ZM5.56219 2.33329L4.5687 3.82353C4.46051 3.98582 4.27837 4.08329 4.08333 4.08329H1.75C1.59529 4.08329 1.44692 4.14475 1.33752 4.25415C1.22812 4.36354 1.16667 4.51192 1.16667 4.66663V11.0833C1.16667 11.238 1.22812 11.3864 1.33752 11.4958C1.44692 11.6052 1.59529 11.6666 1.75 11.6666H12.25C12.4047 11.6666 12.5531 11.6052 12.6625 11.4958C12.7719 11.3864 12.8333 11.238 12.8333 11.0833V4.66663C12.8333 4.51192 12.7719 4.36354 12.6625 4.25415C12.5531 4.14475 12.4047 4.08329 12.25 4.08329H9.91667C9.72163 4.08329 9.53949 3.98582 9.4313 3.82353L8.43781 2.33329H5.56219Z"
+                            fill="white"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M6.99992 5.83329C6.03342 5.83329 5.24992 6.61679 5.24992 7.58329C5.24992 8.54979 6.03342 9.33329 6.99992 9.33329C7.96642 9.33329 8.74992 8.54979 8.74992 7.58329C8.74992 6.61679 7.96642 5.83329 6.99992 5.83329ZM4.08325 7.58329C4.08325 5.97246 5.38909 4.66663 6.99992 4.66663C8.61075 4.66663 9.91659 5.97246 9.91659 7.58329C9.91659 9.19412 8.61075 10.5 6.99992 10.5C5.38909 10.5 4.08325 9.19412 4.08325 7.58329Z"
+                            fill="white"
+                          ></path>
                         </svg>
                       </span>
                       <span>Edit</span>
@@ -56,37 +90,84 @@
                   </div>
                 </div>
                 <div class="px-4 pb-6 text-center lg:pb-8 xl:pb-11.5">
-                  <div class="rounded-lg relative z-30 mx-auto -mt-22 h-30 w-full max-w-30 bg-white/20 p-1 backdrop-blur sm:h-44 sm:max-w-44 sm:p-3">
-                    <div class="relative drop-shadow-2 ">
-                      <img src="/src/images/user/blank-profile.jpg" alt="profile" class="rounded-lg">
-                      <label for="profile" class="absolute bottom-0 right-0 flex h-8.5 w-8.5 cursor-pointer items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90 sm:bottom-2 sm:right-2">
-                        <svg class="fill-current" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M4.76464 1.42638C4.87283 1.2641 5.05496 1.16663 5.25 1.16663H8.75C8.94504 1.16663 9.12717 1.2641 9.23536 1.42638L10.2289 2.91663H12.25C12.7141 2.91663 13.1592 3.101 13.4874 3.42919C13.8156 3.75738 14 4.2025 14 4.66663V11.0833C14 11.5474 13.8156 11.9925 13.4874 12.3207C13.1592 12.6489 12.7141 12.8333 12.25 12.8333H1.75C1.28587 12.8333 0.840752 12.6489 0.512563 12.3207C0.184375 11.9925 0 11.5474 0 11.0833V4.66663C0 4.2025 0.184374 3.75738 0.512563 3.42919C0.840752 3.101 1.28587 2.91663 1.75 2.91663H3.77114L4.76464 1.42638ZM5.56219 2.33329L4.5687 3.82353C4.46051 3.98582 4.27837 4.08329 4.08333 4.08329H1.75C1.59529 4.08329 1.44692 4.14475 1.33752 4.25415C1.22812 4.36354 1.16667 4.51192 1.16667 4.66663V11.0833C1.16667 11.238 1.22812 11.3864 1.33752 11.4958C1.44692 11.6052 1.59529 11.6666 1.75 11.6666H12.25C12.4047 11.6666 12.5531 11.6052 12.6625 11.4958C12.7719 11.3864 12.8333 11.238 12.8333 11.0833V4.66663C12.8333 4.51192 12.7719 4.36354 12.6625 4.25415C12.5531 4.14475 12.4047 4.08329 12.25 4.08329H9.91667C9.72163 4.08329 9.53949 3.98582 9.4313 3.82353L8.43781 2.33329H5.56219Z" fill=""></path>
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00004 5.83329C6.03354 5.83329 5.25004 6.61679 5.25004 7.58329C5.25004 8.54979 6.03354 9.33329 7.00004 9.33329C7.96654 9.33329 8.75004 8.54979 8.75004 7.58329C8.75004 6.61679 7.96654 5.83329 7.00004 5.83329ZM4.08337 7.58329C4.08337 5.97246 5.38921 4.66663 7.00004 4.66663C8.61087 4.66663 9.91671 5.97246 9.91671 7.58329C9.91671 9.19412 8.61087 10.5 7.00004 10.5C5.38921 10.5 4.08337 9.19412 4.08337 7.58329Z" fill=""></path>
+                  <div
+                    class="rounded-lg relative z-30 mx-auto -mt-22 h-30 w-full max-w-30 bg-white/20 p-1 backdrop-blur sm:h-44 sm:max-w-44 sm:p-3"
+                  >
+                    <div class="relative drop-shadow-2">
+                      <img
+                        src="/src/images/user/blank-profile.jpg"
+                        alt="profile"
+                        class="rounded-lg"
+                      />
+                      <label
+                        for="profile"
+                        class="absolute bottom-0 right-0 flex h-8.5 w-8.5 cursor-pointer items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90 sm:bottom-2 sm:right-2"
+                      >
+                        <svg
+                          class="fill-current"
+                          width="14"
+                          height="14"
+                          viewBox="0 0 14 14"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.76464 1.42638C4.87283 1.2641 5.05496 1.16663 5.25 1.16663H8.75C8.94504 1.16663 9.12717 1.2641 9.23536 1.42638L10.2289 2.91663H12.25C12.7141 2.91663 13.1592 3.101 13.4874 3.42919C13.8156 3.75738 14 4.2025 14 4.66663V11.0833C14 11.5474 13.8156 11.9925 13.4874 12.3207C13.1592 12.6489 12.7141 12.8333 12.25 12.8333H1.75C1.28587 12.8333 0.840752 12.6489 0.512563 12.3207C0.184375 11.9925 0 11.5474 0 11.0833V4.66663C0 4.2025 0.184374 3.75738 0.512563 3.42919C0.840752 3.101 1.28587 2.91663 1.75 2.91663H3.77114L4.76464 1.42638ZM5.56219 2.33329L4.5687 3.82353C4.46051 3.98582 4.27837 4.08329 4.08333 4.08329H1.75C1.59529 4.08329 1.44692 4.14475 1.33752 4.25415C1.22812 4.36354 1.16667 4.51192 1.16667 4.66663V11.0833C1.16667 11.238 1.22812 11.3864 1.33752 11.4958C1.44692 11.6052 1.59529 11.6666 1.75 11.6666H12.25C12.4047 11.6666 12.5531 11.6052 12.6625 11.4958C12.7719 11.3864 12.8333 11.238 12.8333 11.0833V4.66663C12.8333 4.51192 12.7719 4.36354 12.6625 4.25415C12.5531 4.14475 12.4047 4.08329 12.25 4.08329H9.91667C9.72163 4.08329 9.53949 3.98582 9.4313 3.82353L8.43781 2.33329H5.56219Z"
+                            fill=""
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.00004 5.83329C6.03354 5.83329 5.25004 6.61679 5.25004 7.58329C5.25004 8.54979 6.03354 9.33329 7.00004 9.33329C7.96654 9.33329 8.75004 8.54979 8.75004 7.58329C8.75004 6.61679 7.96654 5.83329 7.00004 5.83329ZM4.08337 7.58329C4.08337 5.97246 5.38921 4.66663 7.00004 4.66663C8.61087 4.66663 9.91671 5.97246 9.91671 7.58329C9.91671 9.19412 8.61087 10.5 7.00004 10.5C5.38921 10.5 4.08337 9.19412 4.08337 7.58329Z"
+                            fill=""
+                          ></path>
                         </svg>
-                        <input type="file" name="profile" id="profile" class="sr-only">
+                        <input
+                          type="file"
+                          name="profile"
+                          id="profile"
+                          class="sr-only"
+                        />
                       </label>
                     </div>
                   </div>
                   <div class="mt-4">
-                    <h3 class="mb-1.5 text-2xl font-medium text-black dark:text-white">
+                    <h3
+                      class="mb-1.5 text-2xl font-medium text-black dark:text-white"
+                    >
                       Danish Heilium
                     </h3>
                     <p class="text-xs mb-1.5">(Pronoun)</p>
                     <p class="font-medium">Ui/Ux Designer</p>
                     <!-- Team Selection Dropdown -->
 
-                    <div class="mx-auto mb-5.5 mt-4.5 grid max-w-94 grid-cols-3 rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark dark:bg-[#37404F]">
-                      <div class="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
-                        <span class="font-semibold text-black dark:text-white">259</span>
+                    <div
+                      class="mx-auto mb-5.5 mt-4.5 grid max-w-94 grid-cols-3 rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark dark:bg-[#37404F]"
+                    >
+                      <div
+                        class="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row"
+                      >
+                        <span class="font-semibold text-black dark:text-white"
+                          >259</span
+                        >
                         <span class="text-sm">Subscribers</span>
                       </div>
-                      <div class="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row">
-                        <span class="font-semibold text-black dark:text-white">129K</span>
+                      <div
+                        class="flex flex-col items-center justify-center gap-1 border-r border-stroke px-4 dark:border-strokedark xsm:flex-row"
+                      >
+                        <span class="font-semibold text-black dark:text-white"
+                          >129K</span
+                        >
                         <span class="text-sm">Messages</span>
                       </div>
-                      <div class="flex flex-col items-center justify-center gap-1 px-4 xsm:flex-row">
-                        <span class="font-semibold text-black dark:text-white">2K</span>
+                      <div
+                        class="flex flex-col items-center justify-center gap-1 px-4 xsm:flex-row"
+                      >
+                        <span class="font-semibold text-black dark:text-white"
+                          >2K</span
+                        >
                         <span class="text-sm">Contacts</span>
                       </div>
                     </div>
@@ -95,13 +176,16 @@
                       <h4 class="font-medium text-black dark:text-white">
                         About Me
                       </h4>
-                      <p class="mt-4.5 text-sm font-normal">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Pellentesque posuere fermentum urna, eu condimentum
-                        mauris tempus ut. Donec fermentum blandit aliquet. Etiam
-                        dictum dapibus ultricies. Sed vel aliquet libero. Nunc a
-                        augue fermentum, pharetra ligula sed, aliquam lacus.
-                      </p>
+                      <div id="editable" style="position: relative">
+                        <p id="text" class="mt-4.5 text-sm font-normal">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Pellentesque posuere fermentum urna, eu
+                          condimentum mauris tempus ut. Donec fermentum blandit
+                          aliquet. Etiam dictum dapibus ultricies. Sed vel
+                          aliquet libero. Nunc a augue fermentum, pharetra
+                          ligula sed, aliquam lacus.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -116,49 +200,66 @@
                   <h3 class="font-medium text-black dark:text-white">
                     Basic Information
                   </h3>
-                  <div x-data="{popover: false}" @click.outside="popover = false" class="relative inline-block">
-                    <button @click.prevent="popover = !popover" class="inline-flex font-medium text-white">
-                      <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 33 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
                   >
-                    <path
-                      d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                      stroke="#1C274C"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                      stroke="#1C274C"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                      fill="#1C274C"
-                    />
-                  </svg>
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
                     </button>
-                    <div x-show="popover" class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4" style="display: none;">
-                      <span class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"></span>
-                      <div class="border-b border-stroke p-3 dark:border-strokedark">
-                        <h4 class="text-center text-title-sm font-semibold text-black dark:text-white">
-                         Basic Information
+                    <!-- Popover Start -->
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          Basic Information
                         </h4>
                       </div>
                       <div class="px-5 py-4.5 text-center">
                         <p class="font-medium">
-                          Lorem ipsum dolor sit amet, consect adipiscing
-                          elit. Mauris facilisis congue exclamate justo
-                          nec facilisis.
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
                         </p>
                       </div>
                     </div>
+                    <!-- Popover End -->
                   </div>
-                 
                 </div>
                 <div
                   x-data="
@@ -302,29 +403,66 @@
                   <h3 class="font-medium text-black dark:text-white">
                     Knowledge Base
                   </h3>
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 33 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
                   >
-                    <path
-                      d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                      stroke="#1C274C"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                      stroke="#1C274C"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                      fill="#1C274C"
-                    />
-                  </svg>
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Popover Start -->
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          Knowledge Base
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Popover End -->
+                  </div>
                 </div>
                 <div
                   x-data="
@@ -449,9 +587,9 @@
                   </div>
                 </div>
               </div>
-               <!-- Knowledge Base Section End-->
-               <!-- Instructions Section Start -->
-               <div
+              <!-- Knowledge Base Section End-->
+              <!-- Instructions Section Start -->
+              <div
                 class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
               >
                 <div
@@ -460,29 +598,68 @@
                   <h3 class="font-medium text-black dark:text-white">
                     Instructions
                   </h3>
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 33 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <!-- Popover Start -->
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
                   >
-                    <path
-                      d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                      stroke="#1C274C"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                      stroke="#1C274C"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                      fill="#1C274C"
-                    />
-                  </svg>
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Popover Start -->
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          Instructions
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Popover End -->
+                  </div>
+                  <!-- Popover End -->
                 </div>
                 <div
                   x-data="
@@ -619,29 +796,67 @@
                   <h3 class="font-medium text-black dark:text-white">
                     Menu Buttons / Conversation Starters
                   </h3>
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 33 33"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <!-- Popover Start -->
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
                   >
-                    <path
-                      d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                      stroke="#1C274C"
-                      stroke-width="1.5"
-                    />
-                    <path
-                      d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                      stroke="#1C274C"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                      fill="#1C274C"
-                    />
-                  </svg>
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          Menu Buttons / Conversation Starters
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Popover End -->
                 </div>
                 <div
                   x-data="
@@ -653,9 +868,438 @@
       "
                   class="mb-14 w-full p-7.5"
                 >
-                 
                   <div>
-                    <div class="font-medium leading-relaxed"
+                    <div class="font-medium leading-relaxed">
+                      Job Description Text --- Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Suspendisse luctus ligula nec
+                      dolor placerat, a consequat elit volutpat. Quisque nibh
+                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
+                      congue sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Menu Buttons / Conversation Starters Section End -->
+
+              <!-- FAQ Base / Programmed Responses & Actions Section Start -->
+              <div
+                class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
+                <div
+                  class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
+                >
+                  <h3 class="font-medium text-black dark:text-white">
+                    FAQ Base / Programmed Responses & Actions
+                  </h3>
+                  <!-- Popover Start -->
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
+                  >
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          FAQ Base / Programmed Responses & Actions
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Popover End -->
+                </div>
+                <div
+                  x-data="
+    {
+    openTab: 1,
+    activeClasses: 'text-primary border-primary',
+    inactiveClasses: 'border-transparent',
+    }
+    "
+                  class="mb-14 w-full p-7.5"
+                >
+                  <div>
+                    <div class="font-medium leading-relaxed">
+                      Job Description Text --- Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Suspendisse luctus ligula nec
+                      dolor placerat, a consequat elit volutpat. Quisque nibh
+                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
+                      congue sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- FAQ Base / Programmed Responses &  Actions Section End  -->
+              <!-- User Database / Information to be collected from users Section Start -->
+              <div
+                class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
+                <div
+                  class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
+                >
+                  <h3 class="font-medium text-black dark:text-white">
+                    User Database / Information to be collected from users
+                  </h3>
+                  <!-- Popover Start -->
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
+                  >
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+                    
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          User Database / Information to be collected from users
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Popover End -->
+                  </div>
+                </div>
+                <div
+                  x-data="
+    {
+    openTab: 1,
+    activeClasses: 'text-primary border-primary',
+    inactiveClasses: 'border-transparent',
+    }
+    "
+                  class="mb-14 w-full p-7.5"
+                >
+                  <div>
+                    <div class="font-medium leading-relaxed">
+                      Job Description Text --- Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Suspendisse luctus ligula nec
+                      dolor placerat, a consequat elit volutpat. Quisque nibh
+                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
+                      congue sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- User Database / Information to be collected from users End  -->
+
+              <!-- Channels Section Divider Start -->
+              <h2
+                class="text-title-SM font-bold text-black dark:text-white"
+                style="text-align: center"
+              >
+                CHANNELS
+              </h2>
+              <!-- Channels Section Divider End -->
+              
+              <!-- Email Section Start -->
+              <div
+                class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
+                <div
+                  class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
+                >
+                  <h3 class="font-medium text-black dark:text-white">Email</h3>
+                 <!-- Popover Start -->
+                 <div
+                 x-data="{popover: false}"
+                 @mouseleave="popover = false"
+                 class="relative inline-block"
+               >
+                 <button
+                   @mouseenter="popover = !popover"
+                   class="inline-flex font-medium text-white"
+                 >
+                   <svg
+                     width="25"
+                     height="25"
+                     viewBox="0 0 33 33"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                   >
+                     <path
+                       d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                       stroke="#1C274C"
+                       stroke-width="1.5"
+                     />
+                     <path
+                       d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                       stroke="#1C274C"
+                       stroke-width="1.5"
+                       stroke-linecap="round"
+                     />
+                     <path
+                       d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                       fill="#1C274C"
+                     />
+                   </svg>
+                 </button>
+                 <!-- Popover Start -->
+                 <div
+                   x-show="popover"
+                   class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                   style="display: none"
+                 >
+                   <span
+                     class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                   ></span>
+                   <div
+                     class="border-b border-stroke p-3 dark:border-strokedark"
+                   >
+                     <h4
+                       class="text-center text-title-sm font-normal text-black dark:text-white"
+                     >
+                       Email
+                     </h4>
+                   </div>
+                   <div class="px-5 py-4.5 text-center">
+                     <p class="font-medium">
+                       Lorem ipsum dolor sit amet, consect adipiscing elit.
+                       Mauris facilisis congue exclamate justo nec facilisis.
+                     </p>
+                   </div>
+                 </div>
+                 <!-- Popover End -->
+               </div>
+               <!-- Popover End -->
+                </div>
+                <div
+                  x-data="
+{
+openTab: 1,
+activeClasses: 'text-primary border-primary',
+inactiveClasses: 'border-transparent',
+}
+"
+                  class="mb-14 w-full p-7.5"
+                >
+                  <div>
+                    <div class="font-medium leading-relaxed">
+                      Job Description Text --- Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Suspendisse luctus ligula nec
+                      dolor placerat, a consequat elit volutpat. Quisque nibh
+                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
+                      congue sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Email Section End  -->
+
+              <!-- Portal / Chat Link - To share with your audience Section Start -->
+              <div
+                class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
+                <div
+                  class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
+                >
+                  <h3 class="font-medium text-black dark:text-white">
+                    Portal / Chat Link - To share with your audience
+                  </h3>
+                       <!-- Popover Start -->
+                       <div
+                       x-data="{popover: false}"
+                       @mouseleave="popover = false"
+                       class="relative inline-block"
+                     >
+                       <button
+                         @mouseenter="popover = !popover"
+                         class="inline-flex font-medium text-white"
+                       >
+                         <svg
+                           width="25"
+                           height="25"
+                           viewBox="0 0 33 33"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                         >
+                           <path
+                             d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                             stroke="#1C274C"
+                             stroke-width="1.5"
+                           />
+                           <path
+                             d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                             stroke="#1C274C"
+                             stroke-width="1.5"
+                             stroke-linecap="round"
+                           />
+                           <path
+                             d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                             fill="#1C274C"
+                           />
+                         </svg>
+                       </button>
+                       <!-- Popover Start -->
+                       <div
+                         x-show="popover"
+                         class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                         style="display: none"
+                       >
+                         <span
+                           class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                         ></span>
+                         <div
+                           class="border-b border-stroke p-3 dark:border-strokedark"
+                         >
+                           <h4
+                             class="text-center text-title-sm font-normal text-black dark:text-white"
+                           >
+                            Portal / Chat link - To share with your audience
+                           </h4>
+                         </div>
+                         <div class="px-5 py-4.5 text-center">
+                           <p class="font-medium">
+                             Lorem ipsum dolor sit amet, consect adipiscing elit.
+                             Mauris facilisis congue exclamate justo nec facilisis.
+                           </p>
+                         </div>
+                       </div>
+                       <!-- Popover End -->
+                     </div>
+                     <!-- Popover End -->
+                </div>
+                <div
+                  x-data="
+        {
+        openTab: 1,
+        activeClasses: 'text-primary border-primary',
+        inactiveClasses: 'border-transparent',
+        }
+        "
+                  class="mb-14 w-full p-7.5"
+                >
+                  <div
+                    class="mb-6 flex flex-wrap gap-5 border-b border-stroke dark:border-strokedark sm:gap-10"
+                  >
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 1"
+                      :class="openTab === 1 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Link
+                    </a>
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 2"
+                      :class="openTab === 2 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Advanced
+                    </a>
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 3"
+                      :class="openTab === 3 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Colors
+                    </a>
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 4"
+                      :class="openTab === 4 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Download
+                    </a>
+                  </div>
+                  <div>
+                    <div
+                      x-show="openTab === 1"
+                      class="font-medium leading-relaxed"
                     >
                       Job Description Text --- Lorem ipsum dolor sit amet,
                       consectetur adipiscing elit. Suspendisse luctus ligula nec
@@ -664,659 +1308,480 @@
                       congue sem vel sollicitudin sagittis. Class aptent taciti
                       sociosqu ad litora torquent per conubia nostra, per
                     </div>
-                   
+                    <div
+                      x-show="openTab === 2"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Experience Text --- ipsum dolor sit amet, consectetur
+                      adipiscing elit. Suspendisse luctus ligula nec dolor
+                      placerat, a consequat elit volutpat. Quisque nibh lacus,
+                      posuere et turpis in, pretium facilisis nisl. Proin congue
+                      sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                    <div
+                      x-show="openTab === 3"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Motivations Text --- ipsum dolor sit amet, consectetur
+                      adipiscing elit. Suspendisse luctus ligula nec dolor
+                      placerat, a consequat elit volutpat. Quisque nibh lacus,
+                      posuere et turpis in, pretium facilisis nisl. Proin congue
+                      sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                    <div
+                      x-show="openTab === 4"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Mood Text --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
+                    <div
+                      x-show="openTab === 5"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Interests Text --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
+                    <div
+                      x-show="openTab === 6"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Voice Content --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Menu Buttons / Conversation Starters Section End -->
+              <!-- Portal / Chat Link - To share with your audience Section End  -->
 
-              <!-- FAQ Base / Programmed Responses & Actions Section Start -->
+              <!-- Chat Bubble - For your website Section Start -->
               <div
-              class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
-            >
-              <div
-                class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
+                class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
               >
-                <h3 class="font-medium text-black dark:text-white">
-                  FAQ Base / Programmed Responses & Actions
-                </h3>
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 33 33"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
                 >
-                  <path
-                    d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                    stroke="#1C274C"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                    stroke="#1C274C"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                    fill="#1C274C"
-                  />
-                </svg>
-              </div>
-              <div
-                x-data="
-    {
-    openTab: 1,
-    activeClasses: 'text-primary border-primary',
-    inactiveClasses: 'border-transparent',
-    }
-    "
-                class="mb-14 w-full p-7.5"
-              >
-               
-                <div>
-                  <div class="font-medium leading-relaxed"
-                  >
-                    Job Description Text --- Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Suspendisse luctus ligula nec
-                    dolor placerat, a consequat elit volutpat. Quisque nibh
-                    lacus, posuere et turpis in, pretium facilisis nisl. Proin
-                    congue sem vel sollicitudin sagittis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per
-                  </div>
-                 
+                  <h3 class="font-medium text-black dark:text-white">
+                    Chat Bubble - For your website
+                  </h3>
+                       <!-- Popover Start -->
+                       <div
+                       x-data="{popover: false}"
+                       @mouseleave="popover = false"
+                       class="relative inline-block"
+                     >
+                       <button
+                         @mouseenter="popover = !popover"
+                         class="inline-flex font-medium text-white"
+                       >
+                         <svg
+                           width="25"
+                           height="25"
+                           viewBox="0 0 33 33"
+                           fill="none"
+                           xmlns="http://www.w3.org/2000/svg"
+                         >
+                           <path
+                             d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                             stroke="#1C274C"
+                             stroke-width="1.5"
+                           />
+                           <path
+                             d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                             stroke="#1C274C"
+                             stroke-width="1.5"
+                             stroke-linecap="round"
+                           />
+                           <path
+                             d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                             fill="#1C274C"
+                           />
+                         </svg>
+                       </button>
+                       <!-- Popover Start -->
+                       <div
+                         x-show="popover"
+                         class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                         style="display: none"
+                       >
+                         <span
+                           class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                         ></span>
+                         <div
+                           class="border-b border-stroke p-3 dark:border-strokedark"
+                         >
+                           <h4
+                             class="text-center text-title-sm font-normal text-black dark:text-white"
+                           >
+                           Chat Bubble - For your website
+                           </h4>
+                         </div>
+                         <div class="px-5 py-4.5 text-center">
+                           <p class="font-medium">
+                             Lorem ipsum dolor sit amet, consect adipiscing elit.
+                             Mauris facilisis congue exclamate justo nec facilisis.
+                           </p>
+                         </div>
+                       </div>
+                       <!-- Popover End -->
+                     </div>
+                     <!-- Popover End -->
                 </div>
-              </div>
-            </div>
-              <!-- FAQ Base / Programmed Responses &  Actions Section End  -->
-              <!-- User Database / Information to be collected from users Section Start -->
-              <div
-              class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
-            >
-              <div
-                class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
-              >
-                <h3 class="font-medium text-black dark:text-white">
-                  User Database / Information to be collected from users
-                </h3>
-                <svg
-                  width="25"
-                  height="25"
-                  viewBox="0 0 33 33"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                    stroke="#1C274C"
-                    stroke-width="1.5"
-                  />
-                  <path
-                    d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                    stroke="#1C274C"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                    fill="#1C274C"
-                  />
-                </svg>
-              </div>
-              <div
-                x-data="
-    {
-    openTab: 1,
-    activeClasses: 'text-primary border-primary',
-    inactiveClasses: 'border-transparent',
-    }
-    "
-                class="mb-14 w-full p-7.5"
-              >
-               
-                <div>
-                  <div class="font-medium leading-relaxed"
-                  >
-                    Job Description Text --- Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Suspendisse luctus ligula nec
-                    dolor placerat, a consequat elit volutpat. Quisque nibh
-                    lacus, posuere et turpis in, pretium facilisis nisl. Proin
-                    congue sem vel sollicitudin sagittis. Class aptent taciti
-                    sociosqu ad litora torquent per conubia nostra, per
-                  </div>
-                 
-                </div>
-              </div>
-            </div>
-              <!-- User Database / Information to be collected from users End  -->
-              <!-- Channels Section Divider Start -->
-              <h2 class="text-title-SM font-bold text-black dark:text-white" style="
-    text-align: center;
-">
-                CHANNELS
-              </h2>
-              <!-- Channels Section Divider End -->
-  <!-- Email Section Start -->
-  <div
-  class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
->
-  <div
-    class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
-  >
-    <h3 class="font-medium text-black dark:text-white">
-      Email
-    </h3>
-    <svg
-      width="25"
-      height="25"
-      viewBox="0 0 33 33"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-        stroke="#1C274C"
-        stroke-width="1.5"
-      />
-      <path
-        d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-        stroke="#1C274C"
-        stroke-width="1.5"
-        stroke-linecap="round"
-      />
-      <path
-        d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-        fill="#1C274C"
-      />
-    </svg>
-  </div>
-  <div
-    x-data="
-{
-openTab: 1,
-activeClasses: 'text-primary border-primary',
-inactiveClasses: 'border-transparent',
-}
-"
-    class="mb-14 w-full p-7.5"
-  >
-   
-    <div>
-      <div class="font-medium leading-relaxed"
-      >
-        Job Description Text --- Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Suspendisse luctus ligula nec
-        dolor placerat, a consequat elit volutpat. Quisque nibh
-        lacus, posuere et turpis in, pretium facilisis nisl. Proin
-        congue sem vel sollicitudin sagittis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per
-      </div>
-     
-    </div>
-  </div>
-</div>
-  <!-- Email Section End  -->
-
-  <!-- Portal / Chat Link - To share with your audience Section Start -->
-   <div
-  class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
->
-  <div
-    class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
-  >
-    <h3 class="font-medium text-black dark:text-white">
-      Portal / Chat Link - To share with your audience
-    </h3>
-    <svg
-      width="25"
-      height="25"
-      viewBox="0 0 33 33"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-        stroke="#1C274C"
-        stroke-width="1.5"
-      />
-      <path
-        d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-        stroke="#1C274C"
-        stroke-width="1.5"
-        stroke-linecap="round"
-      />
-      <path
-        d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-        fill="#1C274C"
-      />
-    </svg>
-  </div>
-  <div
-    x-data="
+                <div
+                  x-data="
         {
         openTab: 1,
         activeClasses: 'text-primary border-primary',
         inactiveClasses: 'border-transparent',
         }
         "
-    class="mb-14 w-full p-7.5"
-  >
-    <div
-      class="mb-6 flex flex-wrap gap-5 border-b border-stroke dark:border-strokedark sm:gap-10"
-    >
-      <a
-        href="#"
-        @click.prevent="openTab = 1"
-        :class="openTab === 1 ? activeClasses : inactiveClasses"
-        class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-      >
-        Link
-      </a>
-      <a
-        href="#"
-        @click.prevent="openTab = 2"
-        :class="openTab === 2 ? activeClasses : inactiveClasses"
-        class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-      >
-        Advanced
-      </a>
-      <a
-        href="#"
-        @click.prevent="openTab = 3"
-        :class="openTab === 3 ? activeClasses : inactiveClasses"
-        class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-      >
-        Colors
-      </a>
-      <a
-        href="#"
-        @click.prevent="openTab = 4"
-        :class="openTab === 4 ? activeClasses : inactiveClasses"
-        class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-      >
-        Download
-      </a>
-      
-    </div>
-    <div>
-      <div
-        x-show="openTab === 1"
-        class="font-medium leading-relaxed"
-      >
-        Job Description Text --- Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Suspendisse luctus ligula nec
-        dolor placerat, a consequat elit volutpat. Quisque nibh
-        lacus, posuere et turpis in, pretium facilisis nisl. Proin
-        congue sem vel sollicitudin sagittis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per
-      </div>
-      <div
-        x-show="openTab === 2"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Experience Text --- ipsum dolor sit amet, consectetur
-        adipiscing elit. Suspendisse luctus ligula nec dolor
-        placerat, a consequat elit volutpat. Quisque nibh lacus,
-        posuere et turpis in, pretium facilisis nisl. Proin congue
-        sem vel sollicitudin sagittis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per
-      </div>
-      <div
-        x-show="openTab === 3"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Motivations Text --- ipsum dolor sit amet, consectetur
-        adipiscing elit. Suspendisse luctus ligula nec dolor
-        placerat, a consequat elit volutpat. Quisque nibh lacus,
-        posuere et turpis in, pretium facilisis nisl. Proin congue
-        sem vel sollicitudin sagittis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per
-      </div>
-      <div
-        x-show="openTab === 4"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Mood Text --- Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Officia nisi, doloribus nulla cumque
-        molestias corporis eaque harum vero! Quas sit odit optio
-        debitis nulla quisquam, dolorum quaerat animi iusto quod.
-      </div>
-      <div
-        x-show="openTab === 5"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Interests Text --- Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Officia nisi, doloribus nulla cumque
-        molestias corporis eaque harum vero! Quas sit odit optio
-        debitis nulla quisquam, dolorum quaerat animi iusto quod.
-      </div>
-      <div
-        x-show="openTab === 6"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Voice Content --- Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Officia nisi, doloribus nulla cumque
-        molestias corporis eaque harum vero! Quas sit odit optio
-        debitis nulla quisquam, dolorum quaerat animi iusto quod.
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- Portal / Chat Link - To share with your audience Section End  -->
+                  class="mb-14 w-full p-7.5"
+                >
+                  <div
+                    class="mb-6 flex flex-wrap gap-5 border-b border-stroke dark:border-strokedark sm:gap-10"
+                  >
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 1"
+                      :class="openTab === 1 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Settings
+                    </a>
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 2"
+                      :class="openTab === 2 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Mobile
+                    </a>
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 3"
+                      :class="openTab === 3 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Desktop
+                    </a>
+                  </div>
+                  <div>
+                    <div
+                      x-show="openTab === 1"
+                      class="font-medium leading-relaxed"
+                    >
+                      Job Description Text --- Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Suspendisse luctus ligula nec
+                      dolor placerat, a consequat elit volutpat. Quisque nibh
+                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
+                      congue sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                    <div
+                      x-show="openTab === 2"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Experience Text --- ipsum dolor sit amet, consectetur
+                      adipiscing elit. Suspendisse luctus ligula nec dolor
+                      placerat, a consequat elit volutpat. Quisque nibh lacus,
+                      posuere et turpis in, pretium facilisis nisl. Proin congue
+                      sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                    <div
+                      x-show="openTab === 3"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Motivations Text --- ipsum dolor sit amet, consectetur
+                      adipiscing elit. Suspendisse luctus ligula nec dolor
+                      placerat, a consequat elit volutpat. Quisque nibh lacus,
+                      posuere et turpis in, pretium facilisis nisl. Proin congue
+                      sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                    <div
+                      x-show="openTab === 4"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Mood Text --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
+                    <div
+                      x-show="openTab === 5"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Interests Text --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
+                    <div
+                      x-show="openTab === 6"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Voice Content --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Chat Bubble - For your website Section End  -->
 
-   <!-- Chat Bubble - For your website Section Start -->
-   <div
-  class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
->
-  <div
-    class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
-  >
-    <h3 class="font-medium text-black dark:text-white">
-      Chat Bubble - For your website
-    </h3>
-    <svg
-      width="25"
-      height="25"
-      viewBox="0 0 33 33"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-        stroke="#1C274C"
-        stroke-width="1.5"
-      />
-      <path
-        d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-        stroke="#1C274C"
-        stroke-width="1.5"
-        stroke-linecap="round"
-      />
-      <path
-        d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-        fill="#1C274C"
-      />
-    </svg>
-  </div>
-  <div
-    x-data="
-        {
-        openTab: 1,
-        activeClasses: 'text-primary border-primary',
-        inactiveClasses: 'border-transparent',
-        }
-        "
-    class="mb-14 w-full p-7.5"
-  >
-    <div
-      class="mb-6 flex flex-wrap gap-5 border-b border-stroke dark:border-strokedark sm:gap-10"
-    >
-      <a
-        href="#"
-        @click.prevent="openTab = 1"
-        :class="openTab === 1 ? activeClasses : inactiveClasses"
-        class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-      >
-        Settings
-      </a>
-      <a
-        href="#"
-        @click.prevent="openTab = 2"
-        :class="openTab === 2 ? activeClasses : inactiveClasses"
-        class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-      >
-        Mobile
-      </a>
-      <a
-        href="#"
-        @click.prevent="openTab = 3"
-        :class="openTab === 3 ? activeClasses : inactiveClasses"
-        class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-      >
-        Desktop
-      </a>
-            
-    </div>
-    <div>
-      <div
-        x-show="openTab === 1"
-        class="font-medium leading-relaxed"
-      >
-        Job Description Text --- Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Suspendisse luctus ligula nec
-        dolor placerat, a consequat elit volutpat. Quisque nibh
-        lacus, posuere et turpis in, pretium facilisis nisl. Proin
-        congue sem vel sollicitudin sagittis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per
-      </div>
-      <div
-        x-show="openTab === 2"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Experience Text --- ipsum dolor sit amet, consectetur
-        adipiscing elit. Suspendisse luctus ligula nec dolor
-        placerat, a consequat elit volutpat. Quisque nibh lacus,
-        posuere et turpis in, pretium facilisis nisl. Proin congue
-        sem vel sollicitudin sagittis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per
-      </div>
-      <div
-        x-show="openTab === 3"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Motivations Text --- ipsum dolor sit amet, consectetur
-        adipiscing elit. Suspendisse luctus ligula nec dolor
-        placerat, a consequat elit volutpat. Quisque nibh lacus,
-        posuere et turpis in, pretium facilisis nisl. Proin congue
-        sem vel sollicitudin sagittis. Class aptent taciti
-        sociosqu ad litora torquent per conubia nostra, per
-      </div>
-      <div
-        x-show="openTab === 4"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Mood Text --- Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Officia nisi, doloribus nulla cumque
-        molestias corporis eaque harum vero! Quas sit odit optio
-        debitis nulla quisquam, dolorum quaerat animi iusto quod.
-      </div>
-      <div
-        x-show="openTab === 5"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Interests Text --- Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Officia nisi, doloribus nulla cumque
-        molestias corporis eaque harum vero! Quas sit odit optio
-        debitis nulla quisquam, dolorum quaerat animi iusto quod.
-      </div>
-      <div
-        x-show="openTab === 6"
-        class="font-medium leading-relaxed"
-        style="display: none"
-      >
-        Voice Content --- Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. Officia nisi, doloribus nulla cumque
-        molestias corporis eaque harum vero! Quas sit odit optio
-        debitis nulla quisquam, dolorum quaerat animi iusto quod.
-      </div>
-    </div>
-  </div>
-</div>
-  <!-- Chat Bubble - For your website Section End  -->
-
-     <!-- WhatsApp Section Start -->
-     <div
-     class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
-   >
-     <div
-       class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
-     >
-     
-       <h3 class="font-medium text-black dark:text-white">
-        WhatsApp
-       </h3>
-       <svg
-         width="25"
-         height="25"
-         viewBox="0 0 33 33"
-         fill="none"
-         xmlns="http://www.w3.org/2000/svg"
-       >
-         <path
-           d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-           stroke="#1C274C"
-           stroke-width="1.5"
-         />
-         <path
-           d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-           stroke="#1C274C"
-           stroke-width="1.5"
-           stroke-linecap="round"
-         />
-         <path
-           d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-           fill="#1C274C"
-         />
-       </svg>
-     </div>
-     <div
-       x-data="
+              <!-- WhatsApp Section Start -->
+              <div
+                class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+              >
+                <div
+                  class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
+                >
+                  <h3 class="font-medium text-black dark:text-white">
+                    WhatsApp
+                  </h3>
+                        <!-- Popover Start -->
+                 <div
+                 x-data="{popover: false}"
+                 @mouseleave="popover = false"
+                 class="relative inline-block"
+               >
+                 <button
+                   @mouseenter="popover = !popover"
+                   class="inline-flex font-medium text-white"
+                 >
+                   <svg
+                     width="25"
+                     height="25"
+                     viewBox="0 0 33 33"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                   >
+                     <path
+                       d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                       stroke="#1C274C"
+                       stroke-width="1.5"
+                     />
+                     <path
+                       d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                       stroke="#1C274C"
+                       stroke-width="1.5"
+                       stroke-linecap="round"
+                     />
+                     <path
+                       d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                       fill="#1C274C"
+                     />
+                   </svg>
+                 </button>
+                 <!-- Popover Start -->
+                 <div
+                   x-show="popover"
+                   class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                   style="display: none"
+                 >
+                   <span
+                     class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                   ></span>
+                   <div
+                     class="border-b border-stroke p-3 dark:border-strokedark"
+                   >
+                     <h4
+                       class="text-center text-title-sm font-normal text-black dark:text-white"
+                     >
+                       WhatsApp
+                     </h4>
+                   </div>
+                   <div class="px-5 py-4.5 text-center">
+                     <p class="font-medium">
+                       Lorem ipsum dolor sit amet, consect adipiscing elit.
+                       Mauris facilisis congue exclamate justo nec facilisis.
+                     </p>
+                   </div>
+                 </div>
+                 <!-- Popover End -->
+               </div>
+               <!-- Popover End -->
+                </div>
+                <div
+                  x-data="
            {
            openTab: 1,
            activeClasses: 'text-primary border-primary',
            inactiveClasses: 'border-transparent',
            }
            "
-       class="mb-14 w-full p-7.5"
-     >
-       <div
-         class="mb-6 flex flex-wrap gap-5 border-b border-stroke dark:border-strokedark sm:gap-10"
-       >
-         <a
-           href="#"
-           @click.prevent="openTab = 1"
-           :class="openTab === 1 ? activeClasses : inactiveClasses"
-           class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-         >
-           Personal
-         </a>
-         <a
-           href="#"
-           @click.prevent="openTab = 2"
-           :class="openTab === 2 ? activeClasses : inactiveClasses"
-           class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-         >
-           Business
-         </a>
-         <a
-           href="#"
-           @click.prevent="openTab = 3"
-           :class="openTab === 3 ? activeClasses : inactiveClasses"
-           class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
-         >
-          API
-         </a>
-               
-       </div>
-       <div>
-         <div
-           x-show="openTab === 1"
-           class="font-medium leading-relaxed"
-         >
-         <p>Open WhatsApp on your phone<br/>Tap Menu          or Settings         and select Linked Devices<br/>Tap on Link a device<br/>Point your phone to this screen to capture the QR code</p>
-         </div>
-         <div
-           x-show="openTab === 2"
-           class="font-medium leading-relaxed"
-           style="display: none"
-         >
-           Experience Text --- ipsum dolor sit amet, consectetur
-           adipiscing elit. Suspendisse luctus ligula nec dolor
-           placerat, a consequat elit volutpat. Quisque nibh lacus,
-           posuere et turpis in, pretium facilisis nisl. Proin congue
-           sem vel sollicitudin sagittis. Class aptent taciti
-           sociosqu ad litora torquent per conubia nostra, per
-         </div>
-         <div
-           x-show="openTab === 3"
-           class="font-medium leading-relaxed"
-           style="display: none"
-         >
-           Motivations Text --- ipsum dolor sit amet, consectetur
-           adipiscing elit. Suspendisse luctus ligula nec dolor
-           placerat, a consequat elit volutpat. Quisque nibh lacus,
-           posuere et turpis in, pretium facilisis nisl. Proin congue
-           sem vel sollicitudin sagittis. Class aptent taciti
-           sociosqu ad litora torquent per conubia nostra, per
-         </div>
-         <div
-           x-show="openTab === 4"
-           class="font-medium leading-relaxed"
-           style="display: none"
-         >
-           Mood Text --- Lorem ipsum dolor sit amet, consectetur
-           adipisicing elit. Officia nisi, doloribus nulla cumque
-           molestias corporis eaque harum vero! Quas sit odit optio
-           debitis nulla quisquam, dolorum quaerat animi iusto quod.
-         </div>
-         <div
-           x-show="openTab === 5"
-           class="font-medium leading-relaxed"
-           style="display: none"
-         >
-           Interests Text --- Lorem ipsum dolor sit amet, consectetur
-           adipisicing elit. Officia nisi, doloribus nulla cumque
-           molestias corporis eaque harum vero! Quas sit odit optio
-           debitis nulla quisquam, dolorum quaerat animi iusto quod.
-         </div>
-         <div
-           x-show="openTab === 6"
-           class="font-medium leading-relaxed"
-           style="display: none"
-         >
-           Voice Content --- Lorem ipsum dolor sit amet, consectetur
-           adipisicing elit. Officia nisi, doloribus nulla cumque
-           molestias corporis eaque harum vero! Quas sit odit optio
-           debitis nulla quisquam, dolorum quaerat animi iusto quod.
-         </div>
-       </div>
-     </div>
-   </div>
-     <!-- WhatsApp Section End  -->
-    <!-- Plus Button Divider Start -->
-     <div class="flex items-center justify-center">
-      <div class="flex h-plus w-full max-w-plus items-center justify-center rounded-full border border-primary dark:border-white">
-      <svg :class="accordionOpen &amp;&amp; 'hidden'" class="fill-primary dark:fill-white" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.2969 6.51563H8.48438V1.70312C8.48438 1.15625 8.04688 0.773438 7.5 0.773438C6.95313 0.773438 6.57031 1.21094 6.57031 1.75781V6.57031H1.75781C1.21094 6.57031 0.828125 7.00781 0.828125 7.55469C0.828125 8.10156 1.26563 8.48438 1.8125 8.48438H6.625V13.2969C6.625 13.8438 7.0625 14.2266 7.60938 14.2266C8.15625 14.2266 8.53906 13.7891 8.53906 13.2422V8.42969H13.3516C13.8984 8.42969 14.2813 7.99219 14.2813 7.44531C14.2266 6.95312 13.7891 6.51563 13.2969 6.51563Z" fill=""></path>
-      </svg>
+                  class="mb-14 w-full p-7.5"
+                >
+                  <div
+                    class="mb-6 flex flex-wrap gap-5 border-b border-stroke dark:border-strokedark sm:gap-10"
+                  >
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 1"
+                      :class="openTab === 1 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Personal
+                    </a>
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 2"
+                      :class="openTab === 2 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      Business
+                    </a>
+                    <a
+                      href="#"
+                      @click.prevent="openTab = 3"
+                      :class="openTab === 3 ? activeClasses : inactiveClasses"
+                      class="border-b-2 py-4 text-sm font-medium hover:text-primary md:text-base"
+                    >
+                      API
+                    </a>
+                  </div>
+                  <div>
+                    <div
+                      x-show="openTab === 1"
+                      class="font-medium leading-relaxed"
+                    >
+                      <p>
+                        Open WhatsApp on your phone<br />Tap Menu or Settings
+                        and select Linked Devices<br />Tap on Link a device<br />Point
+                        your phone to this screen to capture the QR code
+                      </p>
+                    </div>
+                    <div
+                      x-show="openTab === 2"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Experience Text --- ipsum dolor sit amet, consectetur
+                      adipiscing elit. Suspendisse luctus ligula nec dolor
+                      placerat, a consequat elit volutpat. Quisque nibh lacus,
+                      posuere et turpis in, pretium facilisis nisl. Proin congue
+                      sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                    <div
+                      x-show="openTab === 3"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Motivations Text --- ipsum dolor sit amet, consectetur
+                      adipiscing elit. Suspendisse luctus ligula nec dolor
+                      placerat, a consequat elit volutpat. Quisque nibh lacus,
+                      posuere et turpis in, pretium facilisis nisl. Proin congue
+                      sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per
+                    </div>
+                    <div
+                      x-show="openTab === 4"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Mood Text --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
+                    <div
+                      x-show="openTab === 5"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Interests Text --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
+                    <div
+                      x-show="openTab === 6"
+                      class="font-medium leading-relaxed"
+                      style="display: none"
+                    >
+                      Voice Content --- Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Officia nisi, doloribus nulla cumque
+                      molestias corporis eaque harum vero! Quas sit odit optio
+                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- WhatsApp Section End  -->
+              <!-- Plus Button Divider Start -->
+              <div class="flex items-center justify-center">
+                <div
+                  class="flex h-plus w-full max-w-plus items-center justify-center rounded-full border border-primary dark:border-white"
+                >
+                  <svg
+                    :class="accordionOpen &amp;&amp; 'hidden'"
+                    class="fill-primary dark:fill-white"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.2969 6.51563H8.48438V1.70312C8.48438 1.15625 8.04688 0.773438 7.5 0.773438C6.95313 0.773438 6.57031 1.21094 6.57031 1.75781V6.57031H1.75781C1.21094 6.57031 0.828125 7.00781 0.828125 7.55469C0.828125 8.10156 1.26563 8.48438 1.8125 8.48438H6.625V13.2969C6.625 13.8438 7.0625 14.2266 7.60938 14.2266C8.15625 14.2266 8.53906 13.7891 8.53906 13.2422V8.42969H13.3516C13.8984 8.42969 14.2813 7.99219 14.2813 7.44531C14.2266 6.95312 13.7891 6.51563 13.2969 6.51563Z"
+                      fill=""
+                    ></path>
+                  </svg>
 
-      <svg :class="accordionOpen === true ? 'block' : 'hidden'" class="fill-primary dark:fill-white hidden" width="15" height="3" viewBox="0 0 15 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.503 0.447144C13.446 0.447144 13.503 0.447144 13.503 0.447144H1.49482C0.925718 0.447144 0.527344 0.902427 0.527344 1.47153C0.527344 2.04064 0.982629 2.43901 1.55173 2.43901H13.5599C14.129 2.43901 14.5273 1.98373 14.5273 1.41462C14.4704 0.902427 14.0151 0.447144 13.503 0.447144Z" fill=""></path>
-      </svg>
-    </div>
-   
-     </div>
-     <!-- Plus Button Divider End -->
-     <div class="flex flex-col items-center justify-center">
-     <a href="#" class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
-      Connect additional channels
-    </a>
-    <a href="#" class="inline-flex items-center justify-center px-10 py-4 text-center font-small text-black hover:bg-opacity-90 lg:px-6 xl:px-8">
-      APIs, Social Media, AR/VR, Games  and more...
-    </a>
-  </div>
+                  <svg
+                    :class="accordionOpen === true ? 'block' : 'hidden'"
+                    class="fill-primary dark:fill-white hidden"
+                    width="15"
+                    height="3"
+                    viewBox="0 0 15 3"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.503 0.447144C13.446 0.447144 13.503 0.447144 13.503 0.447144H1.49482C0.925718 0.447144 0.527344 0.902427 0.527344 1.47153C0.527344 2.04064 0.982629 2.43901 1.55173 2.43901H13.5599C14.129 2.43901 14.5273 1.98373 14.5273 1.41462C14.4704 0.902427 14.0151 0.447144 13.503 0.447144Z"
+                      fill=""
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <!-- Plus Button Divider End -->
+              <div class="flex flex-col items-center justify-center">
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
+                >
+                  Connect additional channels
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center px-10 py-4 text-center font-small text-black hover:bg-opacity-90 lg:px-6 xl:px-8"
+                >
+                  APIs, Social Media, AR/VR, Games and more...
+                </a>
+              </div>
             </div>
-           </div>
+          </div>
         </main>
         <!-- ===== Main Content End ===== -->
       </div>
