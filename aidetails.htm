@@ -189,7 +189,7 @@
                       </div>
                     </div>
                   </div>
-                  
+
                   <!-- profile text end -->
                 </div>
               </div>
@@ -236,6 +236,7 @@
                         />
                       </svg>
                     </button>
+
                     <!-- Popover Start -->
                     <div
                       x-show="popover"
@@ -336,62 +337,369 @@
                       dolor placerat, a consequat elit volutpat. Quisque nibh
                       lacus, posuere et turpis in, pretium facilisis nisl. Proin
                       congue sem vel sollicitudin sagittis. Class aptent taciti
-                      sociosqu ad litora torquent per conubia nostra, per
+                      sociosqu ad litora torquent per conubia nostra, per.
+                      <div>
+                        <label
+                          class="mb-3 block text-sm font-medium text-black dark:text-white"
+                        >
+                          Describe your AI Mate's job description
+                        </label>
+                        <textarea
+                          rows="6"
+                          placeholder="Job description text"
+                          class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                        ></textarea>
+                      </div>
                     </div>
                     <div
                       x-show="openTab === 2"
                       class="font-medium leading-relaxed"
-                      style="display: none"
-                    ><div class="flex flex-col gap-5.5 ">
+                    >
+                      Experience Text --- Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Suspendisse luctus ligula nec
+                      dolor placerat, a consequat elit volutpat. Quisque nibh
+                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
+                      congue sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per.
                       <div>
-                        <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                        <label
+                          class="mb-3 block text-sm font-medium text-black dark:text-white"
+                        >
                           Describe your AI Mate's experience or background
                         </label>
-                        <textarea rows="6" placeholder="Experience text" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"></textarea>
+                        <textarea
+                          rows="6"
+                          placeholder="Experience text"
+                          class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                        ></textarea>
                       </div>
-                    </div>
                     </div>
                     <div
                       x-show="openTab === 3"
                       class="font-medium leading-relaxed"
-                      style="display: none"
                     >
-                      Motivations Text --- ipsum dolor sit amet, consectetur
-                      adipiscing elit. Suspendisse luctus ligula nec dolor
-                      placerat, a consequat elit volutpat. Quisque nibh lacus,
-                      posuere et turpis in, pretium facilisis nisl. Proin congue
-                      sem vel sollicitudin sagittis. Class aptent taciti
-                      sociosqu ad litora torquent per conubia nostra, per
+                      Motivations Text --- Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Suspendisse luctus ligula nec
+                      dolor placerat, a consequat elit volutpat. Quisque nibh
+                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
+                      congue sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per.
+                      <div>
+                        <label
+                          class="mb-3 block text-sm font-medium text-black dark:text-white"
+                        >
+                          What drives your AI Mate?
+                        </label>
+                        <textarea
+                          rows="6"
+                          placeholder="Motivations text"
+                          class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                        ></textarea>
+                      </div>
                     </div>
                     <div
                       x-show="openTab === 4"
                       class="font-medium leading-relaxed"
-                      style="display: none"
                     >
                       Mood Text --- Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Officia nisi, doloribus nulla cumque
-                      molestias corporis eaque harum vero! Quas sit odit optio
-                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                      adipiscing elit. Suspendisse luctus ligula nec dolor
+                      placerat, a consequat elit volutpat. Quisque nibh lacus,
+                      posuere et turpis in, pretium facilisis nisl. Proin congue
+                      sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per.
+                      <div>
+                        <label
+                          class="mb-3 block text-sm font-medium text-black dark:text-white"
+                        >
+                          Describe how your AI Mate feels and behaves socially
+                        </label>
+                        <textarea
+                          rows="6"
+                          placeholder="Mood text"
+                          class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                        ></textarea>
+                      </div>
                     </div>
                     <div
                       x-show="openTab === 5"
                       class="font-medium leading-relaxed"
-                      style="display: none"
                     >
                       Interests Text --- Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Officia nisi, doloribus nulla cumque
-                      molestias corporis eaque harum vero! Quas sit odit optio
-                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                      adipiscing elit. Suspendisse luctus ligula nec dolor
+                      placerat, a consequat elit volutpat. Quisque nibh lacus,
+                      posuere et turpis in, pretium facilisis nisl. Proin congue
+                      sem vel sollicitudin sagittis. Class aptent taciti
+                      sociosqu ad litora torquent per conubia nostra, per.
+                      <div>
+                        <label
+                          class="mb-3 block text-sm font-medium text-black dark:text-white"
+                        >
+                          Your AI will try to learn from them to help build its
+                          personality and answers
+                        </label>
+                        <textarea
+                          rows="6"
+                          placeholder="Interests text"
+                          class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+                        ></textarea>
+                      </div>
                     </div>
                     <div
                       x-show="openTab === 6"
                       class="font-medium leading-relaxed"
-                      style="display: none"
                     >
-                      Voice Content --- Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Officia nisi, doloribus nulla cumque
-                      molestias corporis eaque harum vero! Quas sit odit optio
-                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
+                      <div
+                        class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+                      >
+                        <div
+                          class="data-table-common data-table-one max-w-full overflow-x-auto"
+                        >
+                          <div
+                            class="datatable-wrapper datatable-loading no-footer sortable searchable fixed-columns"
+                          >
+                            <div class="datatable-top">
+                              <div class="datatable-dropdown">
+                                <label>
+                                  <select class="datatable-selector">
+                                    <option value="5">5</option>
+                                    <option value="10" selected="">10</option>
+                                    <option value="15">15</option>
+                                    <option value="-1">All</option>
+                                  </select>
+                                  entries per page
+                                </label>
+                              </div>
+                              <div class="datatable-search">
+                                <input
+                                  class="datatable-input"
+                                  placeholder="Search..."
+                                  type="search"
+                                  title="Search within table"
+                                  aria-controls="dataTableOne"
+                                />
+                              </div>
+                            </div>
+                            <div class="datatable-container">
+                              <table
+                                class="table w-full table-auto datatable-table"
+                                id="dataTableOne"
+                              >
+                                <thead>
+                                  <tr>
+                                    <th
+                                      data-sortable="true"
+                                      style="width: 17.84197111299915%"
+                                    >
+                                      <a href="#" class="datatable-sorter">
+                                        <div class="flex items-center gap-1.5">
+                                          <p>Language</p>
+                                          <div
+                                            class="inline-flex flex-col space-y-[2px]"
+                                          >
+                                            <span class="inline-block">
+                                              <svg
+                                                class="fill-current"
+                                                width="10"
+                                                height="5"
+                                                viewBox="0 0 10 5"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M5 0L0 5H10L5 0Z"
+                                                  fill=""
+                                                ></path>
+                                              </svg>
+                                            </span>
+                                            <span class="inline-block">
+                                              <svg
+                                                class="fill-current"
+                                                width="10"
+                                                height="5"
+                                                viewBox="0 0 10 5"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M5 5L10 0L-4.37114e-07 8.74228e-07L5 5Z"
+                                                  fill=""
+                                                ></path>
+                                              </svg>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </th>
+                                    <th
+                                      data-sortable="true"
+                                      class="red"
+                                      style="width: 15.887850467289718%"
+                                    >
+                                      <a href="#" class="datatable-sorter">
+                                        <div class="flex items-center gap-1.5">
+                                          <p>SSML Gender</p>
+                                          <div
+                                            class="inline-flex flex-col space-y-[2px]"
+                                          >
+                                            <span class="inline-block">
+                                              <svg
+                                                class="fill-current"
+                                                width="10"
+                                                height="5"
+                                                viewBox="0 0 10 5"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M5 0L0 5H10L5 0Z"
+                                                  fill=""
+                                                ></path>
+                                              </svg>
+                                            </span>
+                                            <span class="inline-block">
+                                              <svg
+                                                class="fill-current"
+                                                width="10"
+                                                height="5"
+                                                viewBox="0 0 10 5"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M5 5L10 0L-4.37114e-07 8.74228e-07L5 5Z"
+                                                  fill=""
+                                                ></path>
+                                              </svg>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </th>
+                                    <th
+                                      data-sortable="true"
+                                      style="width: 17.50212404418012%"
+                                    >
+                                      <a href="#" class="datatable-sorter">
+                                        <div class="flex items-center gap-1.5">
+                                          <p>Sample</p>
+                                          <div
+                                            class="inline-flex flex-col space-y-[2px]"
+                                          >
+                                            <span class="inline-block">
+                                              <svg
+                                                class="fill-current"
+                                                width="10"
+                                                height="5"
+                                                viewBox="0 0 10 5"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M5 0L0 5H10L5 0Z"
+                                                  fill=""
+                                                ></path>
+                                              </svg>
+                                            </span>
+                                            <span class="inline-block">
+                                              <svg
+                                                class="fill-current"
+                                                width="10"
+                                                height="5"
+                                                viewBox="0 0 10 5"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                              >
+                                                <path
+                                                  d="M5 5L10 0L-4.37114e-07 8.74228e-07L5 5Z"
+                                                  fill=""
+                                                ></path>
+                                              </svg>
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </a>
+                                    </th>
+                                  </tr>
+                                 
+                                </thead>
+                                <tbody>
+                                  <tr data-index="0">
+                                    <td>English (US)</td>
+                                    <td>Male</td>
+                                    <td><button>Play Sample</button></td>
+                                  </tr>
+                                  <tr data-index="1">
+                                    <td>English (US)</td>
+                                    <td>Female</td>
+                                    <td><button>Play Sample</button></td>
+                                  </tr>
+                                  <tr data-index="2">
+                                    <td>English (US)</td>
+                                    <td>Male</td>
+                                    <td><button>Play Sample</button></td>
+                                  </tr>
+                                  <tr data-index="3">
+                                    <td>Portuguese (Brazil)</td>
+                                    <td>Female</td>
+                                    <td><button>Play Sample</button></td>
+                                  </tr>
+                                  <tr data-index="4">
+                                    <td>Portuguese (Brazil)</td>
+                                    <td>Female</td>
+                                    <td><button>Play Sample</button></td>
+                                  </tr>
+                                  <tr data-index="5">
+                                    <td>English (US)</td>
+                                    <td>Male</td>
+                                    <td><button>Play Sample</button></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="datatable-bottom">
+                              <div class="datatable-info">
+                                Showing 1 to 10 of 16 entries
+                              </div>
+                              <nav class="datatable-pagination">
+                                <ul class="datatable-pagination-list">
+                                  <li
+                                    class="datatable-pagination-list-item datatable-hidden datatable-disabled"
+                                  >
+                                    <a
+                                      data-page="1"
+                                      class="datatable-pagination-list-item-link"
+                                      >‹</a
+                                    >
+                                  </li>
+                                  <li
+                                    class="datatable-pagination-list-item datatable-active"
+                                  >
+                                    <a
+                                      data-page="1"
+                                      class="datatable-pagination-list-item-link"
+                                      >1</a
+                                    >
+                                  </li>
+                                  <li class="datatable-pagination-list-item">
+                                    <a
+                                      data-page="2"
+                                      class="datatable-pagination-list-item-link"
+                                      >2</a
+                                    >
+                                  </li>
+                                  <li class="datatable-pagination-list-item">
+                                    <a
+                                      data-page="2"
+                                      class="datatable-pagination-list-item-link"
+                                      >›</a
+                                    >
+                                  </li>
+                                </ul>
+                              </nav>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1025,7 +1333,7 @@
                         />
                       </svg>
                     </button>
-                    
+
                     <div
                       x-show="popover"
                       class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
@@ -1085,7 +1393,7 @@
                 CHANNELS
               </h2>
               <!-- Channels Section Divider End -->
-              
+
               <!-- Email Section Start -->
               <div
                 class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
@@ -1094,68 +1402,68 @@
                   class="flex gap-3 border-b border-stroke px-7.5 py-4 dark:border-strokedark"
                 >
                   <h3 class="font-medium text-black dark:text-white">Email</h3>
-                 <!-- Popover Start -->
-                 <div
-                 x-data="{popover: false}"
-                 @mouseleave="popover = false"
-                 class="relative inline-block"
-               >
-                 <button
-                   @mouseenter="popover = !popover"
-                   class="inline-flex font-medium text-white"
-                 >
-                   <svg
-                     width="25"
-                     height="25"
-                     viewBox="0 0 33 33"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg"
-                   >
-                     <path
-                       d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                       stroke="#1C274C"
-                       stroke-width="1.5"
-                     />
-                     <path
-                       d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                       stroke="#1C274C"
-                       stroke-width="1.5"
-                       stroke-linecap="round"
-                     />
-                     <path
-                       d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                       fill="#1C274C"
-                     />
-                   </svg>
-                 </button>
-                 <!-- Popover Start -->
-                 <div
-                   x-show="popover"
-                   class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
-                   style="display: none"
-                 >
-                   <span
-                     class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
-                   ></span>
-                   <div
-                     class="border-b border-stroke p-3 dark:border-strokedark"
-                   >
-                     <h4
-                       class="text-center text-title-sm font-normal text-black dark:text-white"
-                     >
-                       Email
-                     </h4>
-                   </div>
-                   <div class="px-5 py-4.5 text-center">
-                     <p class="font-medium">
-                       Lorem ipsum dolor sit amet, consect adipiscing elit.
-                       Mauris facilisis congue exclamate justo nec facilisis.
-                     </p>
-                   </div>
-                 </div>
-                 <!-- Popover End -->
-               </div>
-               <!-- Popover End -->
+                  <!-- Popover Start -->
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
+                  >
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Popover Start -->
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          Email
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Popover End -->
+                  </div>
+                  <!-- Popover End -->
                 </div>
                 <div
                   x-data="
@@ -1191,68 +1499,68 @@ inactiveClasses: 'border-transparent',
                   <h3 class="font-medium text-black dark:text-white">
                     Portal / Chat Link - To share with your audience
                   </h3>
-                       <!-- Popover Start -->
-                       <div
-                       x-data="{popover: false}"
-                       @mouseleave="popover = false"
-                       class="relative inline-block"
-                     >
-                       <button
-                         @mouseenter="popover = !popover"
-                         class="inline-flex font-medium text-white"
-                       >
-                         <svg
-                           width="25"
-                           height="25"
-                           viewBox="0 0 33 33"
-                           fill="none"
-                           xmlns="http://www.w3.org/2000/svg"
-                         >
-                           <path
-                             d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                             stroke="#1C274C"
-                             stroke-width="1.5"
-                           />
-                           <path
-                             d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                             stroke="#1C274C"
-                             stroke-width="1.5"
-                             stroke-linecap="round"
-                           />
-                           <path
-                             d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                             fill="#1C274C"
-                           />
-                         </svg>
-                       </button>
-                       <!-- Popover Start -->
-                       <div
-                         x-show="popover"
-                         class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
-                         style="display: none"
-                       >
-                         <span
-                           class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
-                         ></span>
-                         <div
-                           class="border-b border-stroke p-3 dark:border-strokedark"
-                         >
-                           <h4
-                             class="text-center text-title-sm font-normal text-black dark:text-white"
-                           >
-                            Portal / Chat link - To share with your audience
-                           </h4>
-                         </div>
-                         <div class="px-5 py-4.5 text-center">
-                           <p class="font-medium">
-                             Lorem ipsum dolor sit amet, consect adipiscing elit.
-                             Mauris facilisis congue exclamate justo nec facilisis.
-                           </p>
-                         </div>
-                       </div>
-                       <!-- Popover End -->
-                     </div>
-                     <!-- Popover End -->
+                  <!-- Popover Start -->
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
+                  >
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Popover Start -->
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          Portal / Chat link - To share with your audience
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Popover End -->
+                  </div>
+                  <!-- Popover End -->
                 </div>
                 <div
                   x-data="
@@ -1381,68 +1689,68 @@ inactiveClasses: 'border-transparent',
                   <h3 class="font-medium text-black dark:text-white">
                     Chat Bubble - For your website
                   </h3>
-                       <!-- Popover Start -->
-                       <div
-                       x-data="{popover: false}"
-                       @mouseleave="popover = false"
-                       class="relative inline-block"
-                     >
-                       <button
-                         @mouseenter="popover = !popover"
-                         class="inline-flex font-medium text-white"
-                       >
-                         <svg
-                           width="25"
-                           height="25"
-                           viewBox="0 0 33 33"
-                           fill="none"
-                           xmlns="http://www.w3.org/2000/svg"
-                         >
-                           <path
-                             d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                             stroke="#1C274C"
-                             stroke-width="1.5"
-                           />
-                           <path
-                             d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                             stroke="#1C274C"
-                             stroke-width="1.5"
-                             stroke-linecap="round"
-                           />
-                           <path
-                             d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                             fill="#1C274C"
-                           />
-                         </svg>
-                       </button>
-                       <!-- Popover Start -->
-                       <div
-                         x-show="popover"
-                         class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
-                         style="display: none"
-                       >
-                         <span
-                           class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
-                         ></span>
-                         <div
-                           class="border-b border-stroke p-3 dark:border-strokedark"
-                         >
-                           <h4
-                             class="text-center text-title-sm font-normal text-black dark:text-white"
-                           >
-                           Chat Bubble - For your website
-                           </h4>
-                         </div>
-                         <div class="px-5 py-4.5 text-center">
-                           <p class="font-medium">
-                             Lorem ipsum dolor sit amet, consect adipiscing elit.
-                             Mauris facilisis congue exclamate justo nec facilisis.
-                           </p>
-                         </div>
-                       </div>
-                       <!-- Popover End -->
-                     </div>
-                     <!-- Popover End -->
+                  <!-- Popover Start -->
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
+                  >
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Popover Start -->
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          Chat Bubble - For your website
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Popover End -->
+                  </div>
+                  <!-- Popover End -->
                 </div>
                 <div
                   x-data="
@@ -1563,68 +1871,68 @@ inactiveClasses: 'border-transparent',
                   <h3 class="font-medium text-black dark:text-white">
                     WhatsApp
                   </h3>
-                        <!-- Popover Start -->
-                 <div
-                 x-data="{popover: false}"
-                 @mouseleave="popover = false"
-                 class="relative inline-block"
-               >
-                 <button
-                   @mouseenter="popover = !popover"
-                   class="inline-flex font-medium text-white"
-                 >
-                   <svg
-                     width="25"
-                     height="25"
-                     viewBox="0 0 33 33"
-                     fill="none"
-                     xmlns="http://www.w3.org/2000/svg"
-                   >
-                     <path
-                       d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
-                       stroke="#1C274C"
-                       stroke-width="1.5"
-                     />
-                     <path
-                       d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
-                       stroke="#1C274C"
-                       stroke-width="1.5"
-                       stroke-linecap="round"
-                     />
-                     <path
-                       d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
-                       fill="#1C274C"
-                     />
-                   </svg>
-                 </button>
-                 <!-- Popover Start -->
-                 <div
-                   x-show="popover"
-                   class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
-                   style="display: none"
-                 >
-                   <span
-                     class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
-                   ></span>
-                   <div
-                     class="border-b border-stroke p-3 dark:border-strokedark"
-                   >
-                     <h4
-                       class="text-center text-title-sm font-normal text-black dark:text-white"
-                     >
-                       WhatsApp
-                     </h4>
-                   </div>
-                   <div class="px-5 py-4.5 text-center">
-                     <p class="font-medium">
-                       Lorem ipsum dolor sit amet, consect adipiscing elit.
-                       Mauris facilisis congue exclamate justo nec facilisis.
-                     </p>
-                   </div>
-                 </div>
-                 <!-- Popover End -->
-               </div>
-               <!-- Popover End -->
+                  <!-- Popover Start -->
+                  <div
+                    x-data="{popover: false}"
+                    @mouseleave="popover = false"
+                    class="relative inline-block"
+                  >
+                    <button
+                      @mouseenter="popover = !popover"
+                      class="inline-flex font-medium text-white"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 33 33"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16.5 30.25C24.0939 30.25 30.25 24.0939 30.25 16.5C30.25 8.90608 24.0939 2.75 16.5 2.75C8.90608 2.75 2.75 8.90608 2.75 16.5C2.75 24.0939 8.90608 30.25 16.5 30.25Z"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                        />
+                        <path
+                          d="M13.9219 12.2031C13.9219 10.7793 15.0762 9.625 16.5 9.625C17.9238 9.625 19.0781 10.7793 19.0781 12.2031C19.0781 13.1484 18.5694 13.9748 17.8109 14.4236C17.1572 14.8103 16.5 15.3968 16.5 16.1562V17.875"
+                          stroke="#1C274C"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M16.5 23.375C17.2594 23.375 17.875 22.7594 17.875 22C17.875 21.2406 17.2594 20.625 16.5 20.625C15.7406 20.625 15.125 21.2406 15.125 22C15.125 22.7594 15.7406 23.375 16.5 23.375Z"
+                          fill="#1C274C"
+                        />
+                      </svg>
+                    </button>
+                    <!-- Popover Start -->
+                    <div
+                      x-show="popover"
+                      class="absolute left-full top-0 z-20 ml-3 w-max max-w-[311px] rounded bg-white drop-shadow-5 dark:bg-meta-4"
+                      style="display: none"
+                    >
+                      <span
+                        class="absolute -left-1.5 top-4 -z-10 h-4 w-4 rotate-45 rounded-sm bg-white dark:bg-meta-4"
+                      ></span>
+                      <div
+                        class="border-b border-stroke p-3 dark:border-strokedark"
+                      >
+                        <h4
+                          class="text-center text-title-sm font-normal text-black dark:text-white"
+                        >
+                          WhatsApp
+                        </h4>
+                      </div>
+                      <div class="px-5 py-4.5 text-center">
+                        <p class="font-medium">
+                          Lorem ipsum dolor sit amet, consect adipiscing elit.
+                          Mauris facilisis congue exclamate justo nec facilisis.
+                        </p>
+                      </div>
+                    </div>
+                    <!-- Popover End -->
+                  </div>
+                  <!-- Popover End -->
                 </div>
                 <div
                   x-data="
