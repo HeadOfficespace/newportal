@@ -142,7 +142,26 @@
                     </h3>
                     <p class="text-xs mb-1.5">(Pronoun)</p>
                     <p class="font-medium">Ui/Ux Designer</p>
-                    <!-- Team Selection Dropdown -->
+                    <!-- Team Selection Dropdown Start-->
+                    <div class="teamselection mt-5">
+                     
+                      <div x-data="{ isOptionSelected: false }" class="relative z-20 bg-white dark:bg-form-input">
+                        <select class="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3dropdown pl-5 pr-12 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input" :class="isOptionSelected &amp;&amp; 'text-black dark:text-white'" @change="isOptionSelected = true">
+                          <option value="" disabled selected hidden>TEAM</option>
+                          <option value="" class="text-body">Option 1</option>
+                          <option value="" class="text-body">Option 2</option>
+                          <option value="" class="text-body">Option 3</option>
+                        </select>
+                        <span class="absolute right-4 top-1/2 z-20 -translate-y-1/2">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.8">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 8.29289C5.68342 7.90237 6.31658 7.90237 6.70711 8.29289L12 13.5858L17.2929 8.29289C17.6834 7.90237 18.3166 7.90237 18.7071 8.29289C19.0976 8.68342 19.0976 9.31658 18.7071 9.70711L12.7071 15.7071C12.3166 16.0976 11.6834 16.0976 11.2929 15.7071L5.29289 9.70711C4.90237 9.31658 4.90237 8.68342 5.29289 8.29289Z" fill="#637381"></path>
+                            </g>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <!-- Team Selection Dropdown End -->
 
                     <div
                       class="mx-auto mb-5.5 mt-4.5 grid max-w-94 grid-cols-3 rounded-md border border-stroke py-2.5 shadow-1 dark:border-strokedark dark:bg-[#37404F]"
@@ -174,6 +193,9 @@
                     </div>
 
                     <div class="mx-auto max-w-180">
+                      <div class="flex flex-col gap-5.5 p-6.5">
+                       
+                      </div>
                       <h4 class="font-medium text-black dark:text-white">
                         About Me
                       </h4>
@@ -620,7 +642,6 @@
                                       </a>
                                     </th>
                                   </tr>
-                                 
                                 </thead>
                                 <tbody>
                                   <tr data-index="0">
@@ -835,12 +856,139 @@
                       x-show="openTab === 1"
                       class="font-medium leading-relaxed"
                     >
-                      Job Description Text --- Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Suspendisse luctus ligula nec
-                      dolor placerat, a consequat elit volutpat. Quisque nibh
-                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
-                      congue sem vel sollicitudin sagittis. Class aptent taciti
-                      sociosqu ad litora torquent per conubia nostra, per
+                    <div class="dropfile">
+                      <form class="dropzone rounded-md border-dashed border-bodydark1 bg-gray hover:border-primary dark:border-strokedark dark:bg-graydark dark:hover:border-primary dz-clickable" id="demo-upload" action="/upload">
+                        <div class="dz-message">
+                          <div class="mb-2.5 flex justify-center">
+                            <div class="flex h-15 w-15 items-center justify-center rounded-full bg-white text-black shadow-10 dark:bg-black dark:text-white">
+                              <svg class="fill-current" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1867_11682)">
+                                  <path d="M18.75 13.75C18.375 13.75 18.0313 14.0625 18.0313 14.4687V17.25C18.0313 17.5312 17.8125 17.75 17.5312 17.75H2.46875C2.1875 17.75 1.96875 17.5312 1.96875 17.25V14.4687C1.96875 14.0625 1.625 13.75 1.25 13.75C0.875 13.75 0.53125 14.0625 0.53125 14.4687V17.25C0.53125 18.3125 1.375 19.1562 2.4375 19.1562H17.5312C18.5938 19.1562 19.4375 18.3125 19.4375 17.25V14.4687C19.4688 14.0625 19.125 13.75 18.75 13.75Z" fill=""></path>
+                                  <path d="M5.96875 6.46875L9.3125 3.21875V14.0313C9.3125 14.4063 9.625 14.75 10.0312 14.75C10.4062 14.75 10.75 14.4375 10.75 14.0313V3.21875L14.0937 6.46875C14.2187 6.59375 14.4062 6.65625 14.5938 6.65625C14.7812 6.65625 14.9688 6.59375 15.0938 6.4375C15.375 6.15625 15.3438 5.71875 15.0938 5.4375L10.5 1.0625C10.2187 0.8125 9.78125 0.8125 9.53125 1.0625L4.96875 5.46875C4.6875 5.75 4.6875 6.1875 4.96875 6.46875C5.25 6.71875 5.6875 6.75 5.96875 6.46875Z" fill=""></path>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_1867_11682">
+                                    <rect width="20" height="20" fill="white"></rect>
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                          </div>
+                          <span class="font-medium text-black dark:text-white">
+                            Drop files here to upload
+                          </span>
+                        </div>
+                      </form>
+                    </div>
+                      <!-- Knowledge Base Files List Start -->
+                      <div
+                        class="rounded-sm border border-stroke bg-white py-3 shadow-default dark:border-strokedark dark:bg-boxdark"
+                      >
+                        <div
+                          class="flex justify-between gap-2.5 px-6 py-3 hover:bg-gray-2 dark:hover:bg-meta-4 sm:items-center sm:justify-start"
+                        >
+                          <div
+                            class="flex items-center gap-5.5 sm:w-5/12 xl:w-3/12"
+                          >
+                            <div
+                              class="hidden h-14 w-full max-w-14 items-center justify-center rounded-full border border-stroke bg-gray text-black-2 dark:border-strokedark dark:bg-graydark dark:text-white sm:flex"
+                            >
+                              <svg
+                                class="fill-current"
+                                width="28"
+                                height="29"
+                                viewBox="0 0 28 29"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M4.72659 3.36759C5.32314 2.77105 6.13222 2.43591 6.97585 2.43591H16.2295L16.2299 2.43591L16.2303 2.43591C16.4817 2.43591 16.7081 2.54281 16.8665 2.71363L23.7604 9.6075C23.9312 9.76594 24.0381 9.99231 24.0381 10.2437C24.0381 10.2568 24.0378 10.2699 24.0372 10.2828V24.1241C24.0372 24.9677 23.7021 25.7768 23.1055 26.3733C22.509 26.9699 21.6999 27.305 20.8563 27.305H6.97585C6.13222 27.305 5.32313 26.9699 4.72659 26.3733C4.13005 25.7768 3.79492 24.9677 3.79492 24.1241V5.61684C3.79492 4.77321 4.13005 3.96413 4.72659 3.36759ZM6.97585 4.17097H15.3628V10.2437C15.3628 10.7228 15.7512 11.1112 16.2303 11.1112H22.3022V24.1241C22.3022 24.5075 22.1498 24.8753 21.8787 25.1465C21.6075 25.4176 21.2397 25.57 20.8563 25.57H6.97585C6.59238 25.57 6.22462 25.4176 5.95346 25.1465C5.68231 24.8753 5.52997 24.5075 5.52997 24.1241V5.61684C5.52997 5.23337 5.68231 4.86561 5.95346 4.59445C6.22462 4.3233 6.59238 4.17097 6.97585 4.17097ZM17.0979 5.3987L21.0753 9.37613H17.0979V5.3987ZM9.2896 15.1596C8.81048 15.1596 8.42208 15.548 8.42208 16.0271C8.42208 16.5062 8.81048 16.8946 9.2896 16.8946H18.5432C19.0223 16.8946 19.4107 16.5062 19.4107 16.0271C19.4107 15.548 19.0223 15.1596 18.5432 15.1596H9.2896ZM8.42208 20.654C8.42208 20.1749 8.81048 19.7865 9.2896 19.7865H18.5432C19.0223 19.7865 19.4107 20.1749 19.4107 20.654C19.4107 21.1332 19.0223 21.5216 18.5432 21.5216H9.2896C8.81048 21.5216 8.42208 21.1332 8.42208 20.654ZM9.2896 10.5328C8.81048 10.5328 8.42208 10.9212 8.42208 11.4003C8.42208 11.8795 8.81048 12.2679 9.2896 12.2679H11.603C12.0821 12.2679 12.4705 11.8795 12.4705 11.4003C12.4705 10.9212 12.0821 10.5328 11.603 10.5328H9.2896Z"
+                                  fill=""
+                                ></path>
+                              </svg>
+                            </div>
+
+                            <p class="font-medium text-black dark:text-white">
+                              Random-text.doc
+                            </p>
+                          </div>
+
+                          <div class="hidden sm:block sm:w-4/12 xl:w-2/12">
+                            <p class="font-medium text-black dark:text-white">
+                              File size: 455KB
+                            </p>
+                          </div>
+
+                          <div class="hidden w-5/12 xl:block">
+                            <p class="font-medium text-black dark:text-white">
+                              Uploaded on: 12 Feb, 2025
+                            </p>
+                          </div>
+
+                          <div class="text-right sm:w-3/12 xl:w-2/12">
+                            <button
+                              class="inline-flex rounded bg-primary px-3 py-1 font-medium text-white hover:bg-opacity-90 sm:px-6 sm:py-2.5"
+                            >
+                              Download
+                            </button>
+                          </div>
+                        </div>
+
+                        <div
+                          class="flex justify-between gap-2.5 px-6 py-3 hover:bg-gray-2 dark:hover:bg-meta-4 sm:items-center sm:justify-start"
+                        >
+                          <div
+                            class="flex items-center gap-5.5 sm:w-5/12 xl:w-3/12"
+                          >
+                            <div
+                              class="hidden h-14 w-full max-w-14 items-center justify-center rounded-full border border-stroke bg-gray text-black-2 dark:border-strokedark dark:bg-graydark dark:text-white sm:flex"
+                            >
+                              <svg
+                                class="fill-current"
+                                width="28"
+                                height="29"
+                                viewBox="0 0 28 29"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  clip-rule="evenodd"
+                                  d="M4.72659 3.36759C5.32314 2.77105 6.13222 2.43591 6.97585 2.43591H16.2295L16.2299 2.43591L16.2303 2.43591C16.4817 2.43591 16.7081 2.54281 16.8665 2.71363L23.7604 9.6075C23.9312 9.76594 24.0381 9.99231 24.0381 10.2437C24.0381 10.2568 24.0378 10.2699 24.0372 10.2828V24.1241C24.0372 24.9677 23.7021 25.7768 23.1055 26.3733C22.509 26.9699 21.6999 27.305 20.8563 27.305H6.97585C6.13222 27.305 5.32313 26.9699 4.72659 26.3733C4.13005 25.7768 3.79492 24.9677 3.79492 24.1241V5.61684C3.79492 4.77321 4.13005 3.96413 4.72659 3.36759ZM6.97585 4.17097H15.3628V10.2437C15.3628 10.7228 15.7512 11.1112 16.2303 11.1112H22.3022V24.1241C22.3022 24.5075 22.1498 24.8753 21.8787 25.1465C21.6075 25.4176 21.2397 25.57 20.8563 25.57H6.97585C6.59238 25.57 6.22462 25.4176 5.95346 25.1465C5.68231 24.8753 5.52997 24.5075 5.52997 24.1241V5.61684C5.52997 5.23337 5.68231 4.86561 5.95346 4.59445C6.22462 4.3233 6.59238 4.17097 6.97585 4.17097ZM17.0979 5.3987L21.0753 9.37613H17.0979V5.3987ZM9.2896 15.1596C8.81048 15.1596 8.42208 15.548 8.42208 16.0271C8.42208 16.5062 8.81048 16.8946 9.2896 16.8946H18.5432C19.0223 16.8946 19.4107 16.5062 19.4107 16.0271C19.4107 15.548 19.0223 15.1596 18.5432 15.1596H9.2896ZM8.42208 20.654C8.42208 20.1749 8.81048 19.7865 9.2896 19.7865H18.5432C19.0223 19.7865 19.4107 20.1749 19.4107 20.654C19.4107 21.1332 19.0223 21.5216 18.5432 21.5216H9.2896C8.81048 21.5216 8.42208 21.1332 8.42208 20.654ZM9.2896 10.5328C8.81048 10.5328 8.42208 10.9212 8.42208 11.4003C8.42208 11.8795 8.81048 12.2679 9.2896 12.2679H11.603C12.0821 12.2679 12.4705 11.8795 12.4705 11.4003C12.4705 10.9212 12.0821 10.5328 11.603 10.5328H9.2896Z"
+                                  fill=""
+                                ></path>
+                              </svg>
+                            </div>
+
+                            <p class="font-medium text-black dark:text-white">
+                              Random-text.doc
+                            </p>
+                          </div>
+
+                          <div class="hidden sm:block sm:w-4/12 xl:w-2/12">
+                            <p class="font-medium text-black dark:text-white">
+                              File size: 455KB
+                            </p>
+                          </div>
+
+                          <div class="hidden w-5/12 xl:block">
+                            <p class="font-medium text-black dark:text-white">
+                              Uploaded on: 05 Jan, 2025
+                            </p>
+                          </div>
+
+                          <div class="text-right sm:w-3/12 xl:w-2/12">
+                            <button
+                              class="inline-flex rounded bg-primary px-3 py-1 font-medium text-white hover:bg-opacity-90 sm:px-6 sm:py-2.5"
+                            >
+                              Download
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Knowledge Base Files List End -->
                     </div>
                     <div
                       x-show="openTab === 2"
