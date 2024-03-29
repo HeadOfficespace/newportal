@@ -2111,15 +2111,47 @@ Div for actions
                   class="mb-14 w-full p-7.5"
                 >
                   <div>
-                    <div class="font-medium leading-relaxed">
-                      Job Description Text --- Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Suspendisse luctus ligula nec
-                      dolor placerat, a consequat elit volutpat. Quisque nibh
-                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
-                      congue sem vel sollicitudin sagittis. Class aptent taciti
-                      sociosqu ad litora torquent per conubia nostra, per
+                    <div class="flex flex-col font-medium leading-relaxed">
+                      <span class="mb-6">AI's initial, engaging prompts that spark interaction and shape the user'sexperience. Choose relevant and responsive openers to encourage dialogue.</span> 
+                      <div class="flex gap-5.5">
+                        <div class="flex-2">
+                          <input type="text" placeholder="Title" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                        </div>
+                        <div class="flex-1">
+                          <input type="text" placeholder="Prompt" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                        </div>
+                        <button class="hover:text-primary">
+                          <svg class="fill-current" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.7535 2.47502H11.5879V1.9969C11.5879 1.15315 10.9129 0.478149 10.0691 0.478149H7.90352C7.05977 0.478149 6.38477 1.15315 6.38477 1.9969V2.47502H4.21914C3.40352 2.47502 2.72852 3.15002 2.72852 3.96565V4.8094C2.72852 5.42815 3.09414 5.9344 3.62852 6.1594L4.07852 15.4688C4.13477 16.6219 5.09102 17.5219 6.24414 17.5219H11.7004C12.8535 17.5219 13.8098 16.6219 13.866 15.4688L14.3441 6.13127C14.8785 5.90627 15.2441 5.3719 15.2441 4.78127V3.93752C15.2441 3.15002 14.5691 2.47502 13.7535 2.47502ZM7.67852 1.9969C7.67852 1.85627 7.79102 1.74377 7.93164 1.74377H10.0973C10.2379 1.74377 10.3504 1.85627 10.3504 1.9969V2.47502H7.70664V1.9969H7.67852ZM4.02227 3.96565C4.02227 3.85315 4.10664 3.74065 4.24727 3.74065H13.7535C13.866 3.74065 13.9785 3.82502 13.9785 3.96565V4.8094C13.9785 4.9219 13.8941 5.0344 13.7535 5.0344H4.24727C4.13477 5.0344 4.02227 4.95002 4.02227 4.8094V3.96565ZM11.7285 16.2563H6.27227C5.79414 16.2563 5.40039 15.8906 5.37227 15.3844L4.95039 6.2719H13.0785L12.6566 15.3844C12.6004 15.8625 12.2066 16.2563 11.7285 16.2563Z" fill=""></path>
+                            <path d="M9.00039 9.11255C8.66289 9.11255 8.35352 9.3938 8.35352 9.75942V13.3313C8.35352 13.6688 8.63477 13.9782 9.00039 13.9782C9.33789 13.9782 9.64727 13.6969 9.64727 13.3313V9.75942C9.64727 9.3938 9.33789 9.11255 9.00039 9.11255Z" fill=""></path>
+                            <path d="M11.2502 9.67504C10.8846 9.64692 10.6033 9.90004 10.5752 10.2657L10.4064 12.7407C10.3783 13.0782 10.6314 13.3875 10.9971 13.4157C11.0252 13.4157 11.0252 13.4157 11.0533 13.4157C11.3908 13.4157 11.6721 13.1625 11.6721 12.825L11.8408 10.35C11.8408 9.98442 11.5877 9.70317 11.2502 9.67504Z" fill=""></path>
+                            <path d="M6.72245 9.67504C6.38495 9.70317 6.1037 10.0125 6.13182 10.35L6.3287 12.825C6.35683 13.1625 6.63808 13.4157 6.94745 13.4157C6.97558 13.4157 6.97558 13.4157 7.0037 13.4157C7.3412 13.3875 7.62245 13.0782 7.59433 12.7407L7.39745 10.2657C7.39745 9.90004 7.08808 9.64692 6.72245 9.67504Z" fill=""></path>
+                          </svg>
+                        </button>
+                        <!-- Plus Button to add new starters -->
+                      </div>
+                      <div class="flex justify-center mt-5">
+                        <div>
+                          <button @click="" class="flex items-center gap-2 rounded bg-primary px-4.5 py-2 font-medium text-white hover:bg-opacity-80">
+                            <svg class="fill-current" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M15 7H9V1C9 0.4 8.6 0 8 0C7.4 0 7 0.4 7 1V7H1C0.4 7 0 7.4 0 8C0 8.6 0.4 9 1 9H7V15C7 15.6 7.4 16 8 16C8.6 16 9 15.6 9 15V9H15C15.6 9 16 8.6 16 8C16 7.4 15.6 7 15 7Z" fill=""></path>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
+
+
                     </div>
                   </div>
+
+
                 </div>
               </div>
               <!-- Menu Buttons / Conversation Starters Section End -->
@@ -2207,18 +2239,99 @@ Div for actions
                   class="mb-14 w-full p-7.5"
                 >
                   <div>
-                    <div class="font-medium leading-relaxed">
-                      Job Description Text --- Lorem ipsum dolor sit amet,
-                      consectetur adipiscing elit. Suspendisse luctus ligula nec
-                      dolor placerat, a consequat elit volutpat. Quisque nibh
-                      lacus, posuere et turpis in, pretium facilisis nisl. Proin
-                      congue sem vel sollicitudin sagittis. Class aptent taciti
-                      sociosqu ad litora torquent per conubia nostra, per
+
+
+                    <div class="grid gap-4 grid-cols-5 grid-rows-2">
+                      <div class="flex flex-col gap-3"><span class="flex justify-center">If user asks for</span><span>1.2</span></div>
+
+                      <div class="flex flex-col gap-3"><span class="flex justify-center">Response Prompt</span><span>2.2</span></div>
+
+                      <div class="flex flex-col gap-3"><span class="flex justify-center">Alert</span><span>3.2</span></div>
+
+                      <div class="flex items-end"><span>Button Update</span></div>
+
+                      <div class="flex items-end"><span>Button Delete</span></div>
+
+                     
                     </div>
+                    
+
+                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                   </div>
                 </div>
               </div>
               <!-- FAQ Base / Programmed Responses &  Actions Section End  -->
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
               <!-- User Database / Information to be collected from users Section Start -->
               <div
                 class="rounded-lg border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
@@ -2907,67 +3020,82 @@ inactiveClasses: 'border-transparent',
                       x-show="openTab === 1"
                       class="font-medium leading-relaxed"
                     >
-                      <p>
-                        Open WhatsApp on your phone<br />Tap Menu or Settings
-                        and select Linked Devices<br />Tap on Link a device<br />Point
-                        your phone to this screen to capture the QR code
-                      </p>
+                    <div class="whatsapp_container flex justify-between items-center">
+                      <div class="left-div">
+                        <ol>
+                          <li>1. Open WhatsApp on your phone. </li>
+                          <li class="flex gap-1">2. Tap <b>Menu</b><span class="ml-2 mr-2"><svg height="24px" viewBox="0 0 24 24" width="24px"><rect fill="#f2f2f2" height="24" rx="3" width="24"></rect><path d="m12 15.5c.825 0 1.5.675 1.5 1.5s-.675 1.5-1.5 1.5-1.5-.675-1.5-1.5.675-1.5 1.5-1.5zm0-2c-.825 0-1.5-.675-1.5-1.5s.675-1.5 1.5-1.5 1.5.675 1.5 1.5-.675 1.5-1.5 1.5zm0-5c-.825 0-1.5-.675-1.5-1.5s.675-1.5 1.5-1.5 1.5.675 1.5 1.5-.675 1.5-1.5 1.5z" fill="#818b90"></path></svg>
+                           </span> or <b>Settings</b> <span><svg width="24" height="24" viewBox="0 0 24 24"><rect fill="#F2F2F2" width="24" height="24" rx="3"></rect><path d="M12 18.69c-1.08 0-2.1-.25-2.99-.71L11.43 14c.24.06.4.08.56.08.92 0 1.67-.59 1.99-1.59h4.62c-.26 3.49-3.05 6.2-6.6 6.2zm-1.04-6.67c0-.57.48-1.02 1.03-1.02.57 0 1.05.45 1.05 1.02 0 .57-.47 1.03-1.05 1.03-.54.01-1.03-.46-1.03-1.03zM5.4 12c0-2.29 1.08-4.28 2.78-5.49l2.39 4.08c-.42.42-.64.91-.64 1.44 0 .52.21 1 .65 1.44l-2.44 4C6.47 16.26 5.4 14.27 5.4 12zm8.57-.49c-.33-.97-1.08-1.54-1.99-1.54-.16 0-.32.02-.57.08L9.04 5.99c.89-.44 1.89-.69 2.96-.69 3.56 0 6.36 2.72 6.59 6.21h-4.62zM12 19.8c.22 0 .42-.02.65-.04l.44.84c.08.18.25.27.47.24.21-.03.33-.17.36-.38l.14-.93c.41-.11.82-.27 1.21-.44l.69.61c.15.15.33.17.54.07.17-.1.24-.27.2-.48l-.2-.92c.35-.24.69-.52.99-.82l.86.36c.2.08.37.05.53-.14.14-.15.15-.34.03-.52l-.5-.8c.25-.35.45-.73.63-1.12l.95.05c.21.01.37-.09.44-.29.07-.2.01-.38-.16-.51l-.73-.58c.1-.4.19-.83.22-1.27l.89-.28c.2-.07.31-.22.31-.43s-.11-.35-.31-.42l-.89-.28c-.03-.44-.12-.86-.22-1.27l.73-.59c.16-.12.22-.29.16-.5-.07-.2-.23-.31-.44-.29l-.95.04c-.18-.4-.39-.77-.63-1.12l.5-.8c.12-.17.1-.36-.03-.51-.16-.18-.33-.22-.53-.14l-.86.35c-.31-.3-.65-.58-.99-.82l.2-.91c.03-.22-.03-.4-.2-.49-.18-.1-.34-.09-.48.01l-.74.66c-.39-.18-.8-.32-1.21-.43l-.14-.93a.426.426 0 00-.36-.39c-.22-.03-.39.05-.47.22l-.44.84-.43-.02h-.22c-.22 0-.42.01-.65.03l-.44-.84c-.08-.17-.25-.25-.48-.22-.2.03-.33.17-.36.39l-.13.88c-.42.12-.83.26-1.22.44l-.69-.61c-.15-.15-.33-.17-.53-.06-.18.09-.24.26-.2.49l.2.91c-.36.24-.7.52-1 .82l-.86-.35c-.19-.09-.37-.05-.52.13-.14.15-.16.34-.04.51l.5.8c-.25.35-.45.72-.64 1.12l-.94-.04c-.21-.01-.37.1-.44.3-.07.2-.02.38.16.5l.73.59c-.1.41-.19.83-.22 1.27l-.89.29c-.21.07-.31.21-.31.42 0 .22.1.36.31.43l.89.28c.03.44.1.87.22 1.27l-.73.58c-.17.12-.22.31-.16.51.07.2.23.31.44.29l.94-.05c.18.39.39.77.63 1.12l-.5.8c-.12.18-.1.37.04.52.16.18.33.22.52.14l.86-.36c.3.31.64.58.99.82l-.2.92c-.04.22.03.39.2.49.2.1.38.08.54-.07l.69-.61c.39.17.8.33 1.21.44l.13.93c.03.21.16.35.37.39.22.03.39-.06.47-.24l.44-.84c.23.02.44.04.66.04z" fill="#818b90"></path></svg></span>and select <b>Linked Devices</b>.</li>
+                          <li>3. Tap on <b>Link a device</b>.</li>
+                          <li>4. Point your phone to this screen to capture the QR code.</li>
+                        </ol>
+                        
+                      </div>
+                      <div class="right-div">
+                        <img src="https://placehold.co/200x200" alt="Placeholder Image">
+                      </div>
                     </div>
-                    <div
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  <div
                       x-show="openTab === 2"
                       class="font-medium leading-relaxed"
                       style="display: none"
                     >
-                      Experience Text --- ipsum dolor sit amet, consectetur
-                      adipiscing elit. Suspendisse luctus ligula nec dolor
-                      placerat, a consequat elit volutpat. Quisque nibh lacus,
-                      posuere et turpis in, pretium facilisis nisl. Proin congue
-                      sem vel sollicitudin sagittis. Class aptent taciti
-                      sociosqu ad litora torquent per conubia nostra, per
+                    <div class="flex flex-col gap-5.5">
+                      <div>
+                        <label class="mb-3 block text-sm font-medium text-black dark:text-white">
+                          Create your WhatsApp Business account, following these <b><a href="">instructions</a></b>
+                        <label class="mt-6 mb-3 block text-sm font-medium text-black dark:text-white">Webhook Callback URL</label></label>
+
+                        <div class="flex gap-6">
+                          <input type="text" placeholder="Webhook Callback URL" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                          <button class="hover:text-primary"><a _ngcontent-ng-c2731874057="" href="javascript:void(0)"><svg _ngcontent-ng-c2731874057="" width="24" height="24" viewBox="0 0 24 24" fill="grey" xmlns="http://www.w3.org/2000/svg" class="icon-md copy"><path _ngcontent-ng-c2731874057="" fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></a>
+                          </button>
+                        </div>
+                        <div>
+                          <label class="mt-3 mb-3 block text-sm font-medium text-black dark:text-white">
+                           Webhook Verification Token
+                          </label>
+                          <div class="flex gap-6">
+                            <input type="text" placeholder="Webhook Verification Token" class="w-full rounded-lg border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary">
+                            <button class="hover:text-primary"><a _ngcontent-ng-c2731874057="" href="javascript:void(0)"><svg _ngcontent-ng-c2731874057="" width="24" height="24" viewBox="0 0 24 24" fill="grey" xmlns="http://www.w3.org/2000/svg" class="icon-md copy"><path _ngcontent-ng-c2731874057="" fill-rule="evenodd" clip-rule="evenodd" d="M12 4C10.8954 4 10 4.89543 10 6H14C14 4.89543 13.1046 4 12 4ZM8.53513 4C9.22675 2.8044 10.5194 2 12 2C13.4806 2 14.7733 2.8044 15.4649 4H17C18.6569 4 20 5.34315 20 7V19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19V7C4 5.34315 5.34315 4 7 4H8.53513ZM8 6H7C6.44772 6 6 6.44772 6 7V19C6 19.5523 6.44772 20 7 20H17C17.5523 20 18 19.5523 18 19V7C18 6.44772 17.5523 6 17 6H16C16 7.10457 15.1046 8 14 8H10C8.89543 8 8 7.10457 8 6Z" fill="currentColor"></path></svg></a>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div
+                  </div>
+
+
+                  <div
                       x-show="openTab === 3"
                       class="font-medium leading-relaxed"
                       style="display: none"
                     >
-                      Motivations Text --- ipsum dolor sit amet, consectetur
-                      adipiscing elit. Suspendisse luctus ligula nec dolor
-                      placerat, a consequat elit volutpat. Quisque nibh lacus,
-                      posuere et turpis in, pretium facilisis nisl. Proin congue
-                      sem vel sollicitudin sagittis. Class aptent taciti
-                      sociosqu ad litora torquent per conubia nostra, per
+                    <div class="flex flex-col items-center justify-center gap-2">
+                      <span class="text-2xl">WhatsApp integration for medium and large companies</span>
+                      <span class="text-lg">For enterprise customers only</span>
+                      <div class="flex justify-center mt-5">
+                        <a href="#" class="inline-flex items-center justify-center gap-2.5 rounded-md bg-primary px-10 py-4 text-center font-medium text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                        <span>
+                          <svg class="fill-current" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.7499 2.9812H14.2874V2.36245C14.2874 2.02495 14.0062 1.71558 13.6405 1.71558C13.2749 1.71558 12.9937 1.99683 12.9937 2.36245V2.9812H4.97803V2.36245C4.97803 2.02495 4.69678 1.71558 4.33115 1.71558C3.96553 1.71558 3.68428 1.99683 3.68428 2.36245V2.9812H2.2499C1.29365 2.9812 0.478027 3.7687 0.478027 4.75308V14.5406C0.478027 15.4968 1.26553 16.3125 2.2499 16.3125H15.7499C16.7062 16.3125 17.5218 15.525 17.5218 14.5406V4.72495C17.5218 3.7687 16.7062 2.9812 15.7499 2.9812ZM1.77178 8.21245H4.1624V10.9968H1.77178V8.21245ZM5.42803 8.21245H8.38115V10.9968H5.42803V8.21245ZM8.38115 12.2625V15.0187H5.42803V12.2625H8.38115ZM9.64678 12.2625H12.5999V15.0187H9.64678V12.2625ZM9.64678 10.9968V8.21245H12.5999V10.9968H9.64678ZM13.8374 8.21245H16.228V10.9968H13.8374V8.21245ZM2.2499 4.24683H3.7124V4.83745C3.7124 5.17495 3.99365 5.48433 4.35928 5.48433C4.7249 5.48433 5.00615 5.20308 5.00615 4.83745V4.24683H13.0499V4.83745C13.0499 5.17495 13.3312 5.48433 13.6968 5.48433C14.0624 5.48433 14.3437 5.20308 14.3437 4.83745V4.24683H15.7499C16.0312 4.24683 16.2562 4.47183 16.2562 4.75308V6.94683H1.77178V4.75308C1.77178 4.47183 1.96865 4.24683 2.2499 4.24683ZM1.77178 14.5125V12.2343H4.1624V14.9906H2.2499C1.96865 15.0187 1.77178 14.7937 1.77178 14.5125ZM15.7499 15.0187H13.8374V12.2625H16.228V14.5406C16.2562 14.7937 16.0312 15.0187 15.7499 15.0187Z" fill=""></path>
+                          </svg>
+                        </span>Book a Meeting</a>
+                      </div>
                     </div>
-                    <div
-                      x-show="openTab === 4"
-                      class="font-medium leading-relaxed"
-                      style="display: none"
-                    >
-                      Mood Text --- Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Officia nisi, doloribus nulla cumque
-                      molestias corporis eaque harum vero! Quas sit odit optio
-                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
                     </div>
-                    <div
-                      x-show="openTab === 5"
-                      class="font-medium leading-relaxed"
-                      style="display: none"
-                    >
-                      Interests Text --- Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Officia nisi, doloribus nulla cumque
-                      molestias corporis eaque harum vero! Quas sit odit optio
-                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
-                    </div>
-                    <div
-                      x-show="openTab === 6"
-                      class="font-medium leading-relaxed"
-                      style="display: none"
-                    >
-                      Voice Content --- Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Officia nisi, doloribus nulla cumque
-                      molestias corporis eaque harum vero! Quas sit odit optio
-                      debitis nulla quisquam, dolorum quaerat animi iusto quod.
-                    </div>
-                  </div>
+                                                        </div>
                 </div>
               </div>
               <!-- WhatsApp Section End  -->
